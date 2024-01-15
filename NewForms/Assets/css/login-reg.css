@@ -1,0 +1,255 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.reg-body{
+  background: rgb(7, 7, 37);
+  display: flex;
+  gap: 20px;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 3%;
+}
+header{
+  position: unset;
+  width: 100%;
+  overflow: hidden;
+  background: blue;
+  color: white;
+}
+
+/* Test on the nav bar */
+.wrapper {
+  margin: auto;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid rgb(150, 207, 226);
+  box-shadow: 0 0 15px rgb(150, 207, 226);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 600px;
+  height: 360px;
+}
+
+.close{
+  padding-top: 4px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  background: rgb(7, 7, 37);
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  transition: 0.15s;
+}
+.close:hover{
+  background-color: lightgrey;
+  color: black;
+  border: 1.5px solid grey;
+}
+.close:active{
+  opacity: 0.7;
+}
+.form-box{
+  width: 50%;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.form-box h2{
+  text-align: center;
+  font-size: 1.8em;
+}
+.input-region{
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin: 20px 0px;
+  transition: 0.5s;
+}
+
+.input-region input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+  border: none;
+  position: relative;
+  padding-right: 50px;
+  border-bottom: 1.5px solid #fff;
+}
+.input-region input:active{
+  background: transparent;
+}
+.input-region input:focus,
+.input-region input:valid {
+  border-bottom: 2px solid rgb(150, 207, 226);
+}
+
+.input-region label{
+  position: absolute;
+  font-weight: 500;
+  font-size: 15px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-region input:focus~label,
+.input-region input:valid~label {
+  top: -4px;
+  color: rgb(150, 207, 226);
+  font-size: 0.85em;
+}
+
+.input-region i{
+  position: absolute;
+  right: 4px;
+  font-size: 16px;
+  line-height: 57px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  z-index: 1; 
+}
+
+.input-region input:focus~i,
+.input-region input:valid~i {
+  color: rgb(150, 207, 226);
+}
+.input-region #pass-rules{
+  background:rgba(250,250,250, 0.8);
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  font-size: 12px;
+  width: 80%;
+  display: none;
+}
+
+#pass-icon{
+  transition: 0.5s ease;
+}
+
+.error-message{
+  font-size: 14px;
+  background: rgba(220, 220, 220, 0.9);
+  color:rgb(3, 4, 26);
+  text-align: center;
+}
+
+.input-region .icon{
+  position: absolute;
+  font-size: 1.3em;
+  color:rgb(36, 35, 35);
+  right: 8px;
+  line-height: 60px;
+}
+
+.profile-pic-section{
+  margin: 8px 0;
+  font-size: 15px;
+}
+.profile-pic-section label{
+  font-weight: 600;
+}
+.profile-pic-section input{
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+.remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.form-box.Login button[type="submit"]{
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.5s;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  border: 1px solid rgb(150, 207, 226);
+  cursor: pointer;
+}
+
+.form-box.Login button[type="submit"]::before {
+  content: '';
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  background: linear-gradient(darkblue, rgb(150, 207, 226), darkblue, rgb(150, 207, 226));
+  left: 0;
+  top: -100%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.form-box.Login button[type="submit"]:hover::before {
+  top: 0;
+}
+
+.register-link{
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+.forgot{
+  text-decoration: none;
+  transition: opacity .2s, text-decoration 0.2s;
+  color: lightblue;
+  font-weight: 500;
+}
+.forgot:hover{
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* The info-region styles */
+.info-region{
+  width: 50%;
+  color: white;
+  text-align: right;
+  padding: 0 30px 0 120px;
+}
+
+.info-region p{
+  font-size: 0.9em;
+}
+
+/* Slant background */
+.bg-anime{
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background: linear-gradient(45deg, rgb(8, 8, 36), rgb(129, 201, 228));
+  z-index: -1;
+  top: 0;
+  right: 0;
+  transform: rotate(20deg) skewY(35deg);
+  transform-origin: bottom right;
+}

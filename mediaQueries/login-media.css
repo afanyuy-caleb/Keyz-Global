@@ -1,0 +1,62 @@
+@media (max-width: 699px){
+  body{
+    height: 100vh;
+  }
+  .wrapper, .wrapper.register{
+    width: 90%;
+    max-width: 400px;
+  }
+  .wrapper #Login, .wrapper #Register{
+    height: auto;
+  }
+  .form-box{
+    width: 100%;
+    padding: 20px;
+  }  
+  .close{
+    font-size: 130%;
+    width: 35px;
+    height: 35px; 
+  }
+  .forgot, label[for="remember"], .register-link, .login-link{
+    font-size: 95%;
+  }
+  input[type="submit"]{
+    font-size: 90%;
+    padding: 0;
+  }
+  input[type="file"]{
+    font-size: 80%;
+  }
+  .input-region{
+    height: 27px;
+  }
+  .input-region label, label[for="profile-pic"]{
+    font-size: 90%;
+    font-weight: bold;
+  }
+  .form-box .submit-but{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+  }
+  .form-box input[type="submit"]{
+    width: 50%;
+    font-size: 15px;
+    height: 35px;
+    margin: 0;
+    border: none;
+  }
+  .error-message{
+    font-size: 100%;
+  }
+  .register-link, .login-link{
+    margin-top: 6px;
+  }
+  .input-region input{
+    font-size: 12px;
+  }
+
+}

@@ -1,0 +1,312 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  margin-top: 60px;
+}
+.scrollbg{
+  padding: 5px 40px;
+}
+.header-search{
+  display: flex;
+  align-items: center;
+  height: 37px;
+  gap: 10px;
+  padding-left: 10px;
+  border: 1px solid lightgray;
+  flex: 0.9;
+  border-radius: 20px;
+}
+.header-search .all-products{
+  display: inline-flex;
+  align-items: center; 
+}
+.all-products i{
+  font-size: 1.6em;
+}
+.all-products{
+  font-size: 14px;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.products{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  top: 100%;
+  background: aliceblue;
+  white-space: nowrap;
+  padding: 5px;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.4s ease;
+}
+.all-products:hover .products{
+  transform: scaleY(1);
+}
+.products a{
+  width: 100%;
+  padding: 5px 10px;
+  color: rgb(26, 25, 25);
+  font-size: 16px;
+  transition: 0.4s;
+}
+.products a:hover{
+  background:rgb(88, 88, 250);
+  color: white;
+}
+.header-search #input{
+  flex: 1;
+  border: none;
+  outline: none;
+  height: 85%;
+  border-left: 1px solid grey;
+  padding-left: 10px;
+  background: transparent;
+}
+#search-button{
+  font-size: 1.45em;
+  margin-right: 8px;
+}
+main{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  height: 100vh;
+  padding-top: 10px;
+  background: linear-gradient(90deg, rgb(150, 213, 236), rgb(220, 234, 245));
+}
+main section{
+  display: flex;
+  background: rgb(248, 252, 255);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  align-items: center;
+}
+.section1{
+  background: transparent;
+  gap: 1px;
+  height: 260px;
+}
+.section1 div, .section1 a, .section1 form input[type="submit"]{
+  background: rgb(248, 252, 255);
+  display: inline-flex;
+  width: 100%;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid rgb(236, 232, 232);
+}
+.section1 form {
+  width: 100%;
+  display: inline-flex;
+  gap: 1px;
+  flex-direction: column;
+}
+.section1 form input[type="submit"]{
+  outline: none;
+  border: none;
+}
+.section1 a{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.section1 a i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+.section1 a input{
+  justify-content: center;
+  accent-color: red;
+}
+#prof-title{
+  color: rgb(88, 88, 250);
+  font-size: 18px;
+}
+.section1 a, .section1 a, .section1 form input[type="submit"], .section1 a{
+  color: rgb(92, 90, 90);
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.section1 i{
+  font-size: 1.5em;
+}
+.section1 a:hover, .section1 form input[type="submit"]:hover, .section1 a:hover{
+  color: white;
+  background:rgb(88, 88, 250);
+}
+
+.profile-section, .pic-section{
+  border: none;
+  transition: 0.5s ease;
+}
+.profile-section{
+  width: 23%;
+  height: 490px;
+  padding: 0 20px;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 30px 15px;
+}
+.profile-section h4{
+  color: rgb(36, 35, 35);
+  font-size: 24px;
+}
+.profile-section p{
+  font-size: 14px;
+  margin-top: 10px;
+  color: grey;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  background: white;
+}
+.image i{
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  background: white;
+  color: rgb(153, 223, 248);
+  text-align: center;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 1.6em;
+  font-weight: 200;
+}
+.changes{
+  display: flex;
+  align-items: center;
+  width: 87%;
+  justify-content: space-between;
+}
+.profile-section a, .profile-section input{
+  text-decoration: none;
+  background:lightgray;
+  padding: 5px 8px;
+  margin-top: 10px;
+  border-radius: 3px;
+  color: rgb(15,15,15);
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+.profile-section a:active{
+  transform: translate(5px, 3px);
+}
+.section3{
+  height: 300px;
+  padding: 20px 0;
+  flex: 0.85;
+}
+.section3 #header-div{
+  width: 90%;
+  height: 35px;
+  font-size: 19px;
+  color:rgb(41, 135, 151);
+  border-bottom: 1px solid rgb(219, 213, 213);
+}
+.section3 .div1, .section3 .div2{
+  display: flex;
+  align-items: center;
+  gap: 30%;
+  width: 90%;
+  padding-top: 10px; 
+}
+
+.section3 div h6{
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.section3 div p{
+  color: gray;
+  line-height: 1.3em;
+  font-size: 14px;
+}
+.shadow{
+  background: rgba(26, 25, 25, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  padding-top: 50px; 
+  z-index: 40;
+}
+.pic-section{
+  color:rgb(49, 48, 48);
+  transition: 0.6s ease;
+  transform: translateY(-150%);
+  background: white;
+  padding: 5px 25px 25px 25px;
+}
+.close-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  border-bottom: none;
+  padding: 4px;
+  box-shadow: 0 2px 1px rgba(0,0,0, 0.2);
+}
+.close-header i{
+  font-size: 2em;
+  color: gray;
+}
+input[type="file"]{
+  font-size: 16px;
+  width: 100%;
+  height: 30px;
+}
+.pic-section .image-choice{
+  height: 300px;
+  width: 400px;
+  margin: 15px 0;
+  border: none;
+  background: lightgray;
+}
+.pic-section .image-choice img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pic-section #upload{
+  background: rgb(20, 20, 230);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: 15px;
+}
+.shadow.active{
+  transform: scale(1);
+}
+.shadow.active .pic-section{
+  transform: translateY(0);
+} 

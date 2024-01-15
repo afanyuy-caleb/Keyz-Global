@@ -1,0 +1,270 @@
+
+@media (max-width: 699px){
+  header{
+    padding: 5px 15px 10px 15px;
+  }
+  html{
+    font-size: 75%;
+  }
+  header #menu{
+    opacity: 1;
+    font-size: 2.3em;
+  }
+  .scrollbg .link{
+    color: white;
+  }  
+  .scrollbg .navigation a button{
+    color: white;
+    border: 1px solid rgb(20, 20, 230);
+  }
+  .scrollbg .navigation a button:hover{
+    background: rgb(60, 60, 199);
+    color:rgb(248, 248, 248);
+  }
+  .scrollbg .navigation h3{
+    color: rgb(20, 20, 230);
+  }
+  .navigation{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background: rgba(11, 11, 63, 0.815);
+    flex-direction: column;
+    padding: 10px 0;
+    transform: translate(110%, -80%);
+    /* display: block; */
+    transition: transform 0.5s ease;
+  }
+  .navigation.active, .navigation.login.active{
+    transform: translate(0);
+    /* display: block; */
+  }
+  .profile-links{
+    top: 40%;
+    right: 0;
+    width: 50%;
+    right: 0;
+    background: whitesmoke;
+  }
+  .navigation .link-portion{
+    flex-direction: column;
+    margin: 5px 0;
+    width: 100%;
+  }
+  .link-portion a{
+    padding: 8px 0 8px 12px;
+    width: 100%;
+  }
+  .navigation .link-portion a:hover{
+    background: lightgray;
+    color: rgb(66, 66, 214);
+  }
+  .link-portion a{
+    display: block;
+  }
+  .navigation a{
+    width: 100%;
+  }
+  .navigation a button{
+    border: none;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .navigation a::after, .navigation i, .navigation hr, .navigation h3{
+    display: none;
+  }
+  .pro-image{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .pro-image img{
+    display: none;
+  }
+  .pro-image i{
+    display: block;
+  }
+
+  /* Image portion section */
+  .page-motiv #intro{
+    font-size: 25px;
+  }
+
+  /* Font size of 11px items */
+  .page-motiv #search, .training p{
+    font-size: 11px;
+    letter-spacing: 0.035em;
+  }
+  .page-motiv{
+    width: 90%;
+  }
+  .input-section{
+    height: 35px;
+    padding-right: 8px;
+  } 
+  .input-section input, .input-section input::placeholder{
+    font-size: 13px;
+  }
+  .search-button i{
+    font-size: 18px;
+  }
+  .trending{
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .trending p, .trending a, .training-content h2{
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
+  .trending a{
+    margin-top: 5px;
+  }
+  .below-header{
+    overflow: scroll;
+    white-space: nowrap;
+    padding-left: 20px;
+  }
+  /* Main sections */
+  .Products, .training, .About, .image-desc .description {
+    padding: 10px;
+  }
+  .Product-section, .training-section{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%; 
+    row-gap: 20px; 
+    padding: 0px;
+   } 
+   .Product-section .image-desc{
+    height: 160px;
+   }
+   .image-desc .description{
+    padding: 10px;
+   }
+   .image-desc .description h1{
+    font-size: 100%;
+    margin-bottom: 5px;
+   }
+   .image-desc .description p{
+    font-size: 80%;
+    letter-spacing: 0;
+    line-height: 12px;
+   }
+   .image-desc .description a{
+    padding: 5px;
+    font-size: 70%;
+   }
+   /* Headings */
+  .training h1, .contact h1{
+    font-size: 25px;
+  }
+  .training-intro, .contact-intro{
+    width: 95%;
+  }
+  .training-section{
+    grid-template-columns: 1fr;
+    row-gap: 20px; 
+    padding: 0px;
+  } 
+  .training-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .training-content i{
+    font-size: 2em;
+    padding: 8px;
+    margin-bottom: 5px;
+  }
+  .training-content a{
+    left: 40%;
+    font-size: 90%;
+    padding: 5px 8px;
+  }
+  .About-content{
+    grid-template-columns: 1fr;
+  }
+  .About-me{
+    height: 370px;
+    overflow: scroll;
+  }
+  .About-desc{
+    padding: 15px 10px;
+    height: 100%; 
+  }
+  .About-image{
+    height: 440px;
+  }
+  .desc-content h2{
+    font-size: 20px;
+  }
+  .desc-content h4{
+    font-size: 18px;
+  }
+  .desc-content p{
+    font-size: 14px;
+  }
+  .contact{
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .contact p, .contact-details input, .contact-content textarea, .submit{
+    font-size: 100%;
+  } 
+  .contact-content{
+    margin-top: 0;
+    width: 90%;
+  }
+  .contact-intro{
+    margin-bottom: 20px;
+  }
+  /* Footer edit */
+  .footer-content, .footer-links{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 15px;
+  }
+  .footer-links div{
+    width: 85%;
+  }
+  .footer-links div h3{
+    font-size: 15px;
+  }
+  .footer-links div a{
+    font-size: 12px;
+  }
+  .footer-div{
+    padding: 15px;
+    font-size: small;
+    gap: 20%;
+  }
+  .scroll-up{
+    left: 0;
+  }
+}
+/* Correcting the trainings section */
+@media (min-width:330px) and (max-width: 699px){
+  .training-section{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px; 
+    row-gap: 20px; 
+    padding: 0px;
+  }
+}
+/* Tablet media */
+@media (min-width:700px) and (max-width: 950px){
+  .Products, .training, .About {
+    min-width: 100vw;
+    padding: 20px;
+  }
+  .Product-section, .training-section{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px; 
+    row-gap: 20px; 
+    padding: 0px;
+   }   
+}

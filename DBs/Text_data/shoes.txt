@@ -1,0 +1,26 @@
+1	Coolmax 	23.67 	37.89 	Coolmax.jpg
+2	Neon Blue Nike	31.66	45.09	DarkNike.jpg
+3	Dark_Nike	47.87	60	Dark_Nike.jpg
+4	Godas	20.02	43	Godas.jpg
+5	High_Nike	39	53	High_Nike.jpg
+6	Mcqueen 	52	67	Mcqueen.jpg
+7	Low Nike 	26	33	Shoe1.jpg
+8	Blue Nike	51	70	shoe10.jpg
+9	Dior 	56	67	shoe11.jpg
+10 	Vuitton Sandals 	25.32	34 	shoe12.jpg
+11 	Givenchy Black 	67 	90	shoe13.jpg
+12 	Blank Nike 	38	43 	shoe14.jpg
+13 	Dark Mcqueen	65	82	shoe15.jpg
+14	Ladies Herm 	23 	40 	shoe16.jpg
+15 	Blue Naked Wolfe	50	70	shoe17.jpg
+16 	Green Bape	43	56	shoe2.jpg
+17	Vuitton Black	35	50	shoe3.jpg
+18	Alexander Mcqueen	56	70	shoe4.jpg
+19	Black Wolfe 	47 	52	shoe5.jpg
+20	Green Nike	31.27 	40 	shoe6.jpg
+21	Low blue 	27 	33 	shoe7.jpg
+22 	Naked Wolfe(Black)	67	75	shoe8.jpg
+23	Poppins 	37 	43	shoe9.jpg
+24	Glassy Flow 	42 	57	Supershoes.jpg
+25	Air Nike 	57 	65	Super_spor.jpg
+26	Top-up	40 	46.86	topup.jpg
