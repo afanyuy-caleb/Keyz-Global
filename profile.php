@@ -1,8 +1,8 @@
 <?php
 
   session_start();
-  include_once('picture_upload.php');
 
+  include_once('picture_upload.php');
   include_once('db_ops/database-select.php');
 
   /* The save function */
@@ -138,7 +138,7 @@
         ?></h4>
         <p>
           <?php
-            echo $_SESSION['email-address'].'<br>';
+            echo $_SESSION['values']['email'].'<br>';
             echo $message;
           ?>
         </p> 
@@ -165,33 +165,43 @@
           <div>
             <h6>Email Address</h6>
             <p><?php
-            echo $_SESSION['email-address']; ?></p>
-          </div>  
-        </div>
-        <div class="div2">
+            echo $_SESSION['values']['email']; ?></p>
+          </div>
+          <div>
+            <h6>Occupation</h6>
+            <p><?php
+            echo $_SESSION['values']['occupation']; ?></p>
+          </div>
+          <div>
+            <h6>Country of Origin</h6>
+            <p><?php
+            echo $_SESSION['values']['Country']; ?></p>
+          </div>
+          <div>
+            <h6>Tel/Fax</h6>
+            <p><?php
+            echo $_SESSION['values']['Tel']; ?></p>
+          </div>
           <div>
             <h6>Time Zone</h6>
             <p>Cameroon-WAT-Africa/Douala</p>
             <p> <?php echo date("Y F j "); ?></p>
           </div> 
         </div>
+
       </section>
 
       <script>
         // Image preview before upload
 
         function displayImage(e){
-          if(e.files[0]){
-  
+          if(e.files[0]){ 
             let reader = new FileReader();
 
             reader.onload = function(e){
-      
               document.querySelector('#Img_preview').setAttribute('src', e.target.result);
             }
-
-            reader.readAsDataURL(e.files[0]);
-            
+            reader.readAsDataURL(e.files[0])
           }
         }
       </script>

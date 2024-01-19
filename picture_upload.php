@@ -3,14 +3,14 @@
   include_once('db_ops/database-connect.php');
   $allowed_ext = ['png', 'jpg', 'jpeg', 'wpeg','gif', 'webp', 'avif'];
 
-  if(!empty($_SESSION['email-address'])){
-    $email = $_SESSION['email-address'];
+  if(!empty($_SESSION['values']['email'])){
+    $email = $_SESSION['values']['email'];
   }
 
   if(isset($_POST['upload'])){
     if(!empty($_FILES['prof']['name'])){
 
-      $file_name = time() .'_'.$_FILES['prof']['name'];
+      $file_name = time().'_'.$_FILES['prof']['name'];
       $file_size = $_FILES['prof']['size'];
       $file_tmp = $_FILES['prof']['tmp_name'];
 

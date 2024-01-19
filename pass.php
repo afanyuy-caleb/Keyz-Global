@@ -2,14 +2,14 @@
   
   session_start(); 
 
-  $email = $_SESSION['email-address']??$_SESSION['e-mail'];
+  $email = $_SESSION['e-mail'];
 
   include_once('db_ops/database-connect.php');
 
   $passerr = $passwd = $real_pass = $password_hash = "";
   if($_POST){
    if(isset($_POST['home'])){
-    if(! isset($_SESSION['email-address'])){
+    if(! isset($_SESSION['values']['email'])){
       session_destroy(); 
       header("Location:NewForms/index.php");
       exit();
@@ -34,7 +34,7 @@
         $passerr = 'Passwords must match';
       }
       else{
-        $password_hash = password_hash($_POST['passwd'],PASSWORD_DEFAULT);
+        $password_hash = password_hash($_POST['passwd'],PASSWORD_BCRYPT);
         $real_pass = $_POST['passwd'];
       }
     }
@@ -56,8 +56,7 @@
       }
       $passerr = " Password Changed Successfully";
     }
-  }
-  
+  }  
 }
 ?>
 

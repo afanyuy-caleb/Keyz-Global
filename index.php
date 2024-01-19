@@ -63,6 +63,7 @@
     localStorage.removeItem('products')
     localStorage.removeItem('tableName')
   </script>
+  
   <script src="JS/index.js"></script>
   <script src="JS/notif.js"></script>
 

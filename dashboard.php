@@ -1,9 +1,15 @@
 <?php
   session_start();
+
+  include_once('db_ops/database-select.php');
+
+  if(!isset($_SESSION['values'])){
+    header("Location: index.php");
+    die;
+  } 
   if(!isset($_SESSION['index'])){
     $_SESSION['index'] = 0;
   }
-  include_once('db_ops/database-select.php');
 
   $data = "SELECT * FROM user WHERE role_id != 1";
   $datum = mysqli_query($conn, $data);
@@ -30,6 +36,7 @@
     session_destroy();
     header("location:index.php");
   }
+
   $role_query = "SELECT * FROM role WHERE id = (SELECT role_id FROM user WHERE email = '$email')";
   $user_role = mysqli_query($conn, $role_query);
   $role = mysqli_fetch_assoc($user_role);

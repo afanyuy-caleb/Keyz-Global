@@ -14,23 +14,19 @@
       $array[] = $em;
     }  
   }
-  //function to print out array in readable form
-  function split_r($elements){
-    echo '<pre>';
-    print_r($elements);
-    echo '</pre>';
-  }
-  // split_r($array);
   
   $eml = "";
   if($_POST){
     if(isset($_POST['home'])){
-      if(empty($_SESSION['email-address'])){
+      if(empty($_SESSION['values']['email'])){
         header("Location: Newforms/index.php");
         exit();
       }
-      header("Location:homepage.php");
-      exit();
+      else{
+        header("Location:homepage.php");
+        exit();
+      }
+      
     }
     else{
       if(empty($_POST['new-email'])){
@@ -67,10 +63,10 @@
 <body>
   <div class="container">
     <p>
-      <?php  echo $eml?>
+      <?php  echo $eml??NULL?>
     </p>
     <h2>Change Password</h2>
-    <p>Enter your Email address for authentification</p>
+    <p>Enter your Email address for authentication</p>
     
     <form action="" method="POST">
       <input type="email" name="new-email" placeholder="xxxx@gmail.com">
