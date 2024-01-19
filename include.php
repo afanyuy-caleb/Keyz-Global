@@ -112,7 +112,7 @@
         <h2><?php echo $train['title']; ?></h2>
         <p><?php echo $train['description']; ?>
         </p>
-        <a href="">Kick Off</a>
+        <a href="<?= $train['link']?>">Kick Off</a>
       </div>
       
       <?php endforeach; ?>

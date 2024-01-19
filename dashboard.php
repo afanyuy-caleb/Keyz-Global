@@ -8,7 +8,7 @@
   $data = "SELECT * FROM user WHERE role_id != 1";
   $datum = mysqli_query($conn, $data);
   $answers = mysqli_fetch_all($datum, MYSQLI_ASSOC);
-
+  
   $size = 0;
   while(!empty($answers[$size])){
     $size++;
@@ -229,6 +229,7 @@
       <section class="info">
         
         <div class="customer-info">
+
           <h3>Recent customers(<?php echo $size ?>)</h3>
           <p>and activites</p>
 
@@ -243,7 +244,7 @@
 
               </label>     
               </form>
-              <img src="images/profile-pics/<?php echo $answers[$_SESSION['index']]['pic']; ?>" alt="">
+              <img src="images/profile-pics/<?php echo $answers[$_SESSION['index']]['pic']; ?>" alt="image here">
               <form method="POST" action="">
               <input type="submit" name="right" id="arr" style="display:none;">
               <label for="arr">
@@ -269,6 +270,7 @@
           <div></div>
           <div></div>
         </div>
+
       </section>
     </main>
     

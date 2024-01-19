@@ -202,9 +202,10 @@ function renderPage(received_id){
     </div>
 
     <hr>
-
     <div class="Pay-btn">
-      <button type="submit" class="submit-payment"> Confirm & Pay</button>
+      <a href="./Checkout.php" type="submit" class="submit-payment">        Confirm & Pay
+      </a>
+
     </div>
   `
   document.querySelector('.orderedItems').innerHTML = itemContainer;

@@ -406,6 +406,12 @@ section .payment{
   font-weight: 500;
   border-radius: 12px;
   transition: all 0.3s;
+  text-decoration: none;
+  color: rgb(24, 23, 23);
+  background: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Pay-btn .submit-payment:hover{

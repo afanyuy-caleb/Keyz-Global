@@ -46,7 +46,7 @@
     
     if(!empty($_FILES['profile-pic']['name'])){
 
-      $file_name = $_FILES['profile-pic']['name'];
+      $file_name = time().$_FILES['profile-pic']['name'];
       $file_size = $_FILES['profile-pic']['size'];
       $file_tmp = $_FILES['profile-pic']['tmp_name'];
 
