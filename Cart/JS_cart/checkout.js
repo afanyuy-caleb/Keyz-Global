@@ -4,6 +4,8 @@ import {formatCurrency} from './utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 var localData = JSON.parse(localStorage.products)
+console.log(cart)
+console.log(localData)  
 
 function shippingOptions(shipping_id){
   let html = '';
@@ -165,7 +167,7 @@ function renderPage(received_id){
           Order Total
         </span>
         <span>
-          $${Number(tax_amt) + tot_amt}
+          $${(Number(tax_amt) + tot_amt).toFixed(2)}
         </span>
       </div>
       

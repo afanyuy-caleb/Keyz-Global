@@ -53,9 +53,9 @@
         <a class="link" href="#Contact">Contact Us</a>
       </div>
       <hr>
+      <i class='far fa-bell' id="notif" title="notification"></i>
       <a href="Cart/index.php">
-
-        <i class='bx bx-cart-alt' id="cart" title="Cart"></i>
+        <i class='fas fa-cart-shopping' id="cart" title="Cart"></i>
       </a>
       
       <h3>

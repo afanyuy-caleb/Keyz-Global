@@ -78,16 +78,17 @@
       $country = $_POST['country'];
       $tel = $_POST['tel'];
       $sex = $_POST['sex'];
+      $date = date("Y-m-j");
 
       /* Inserting data into the database  */
 
       if(isset($temporal_pic)){
-        $sql = "INSERT INTO user(name, email, pass_hash, pic, occupation, Country, Tel, Gender) VALUE
-        ('$name', '$email','$password_hash', '$temporal_pic', '$occup', '$country', '$tel', '$sex');";
+        $sql = "INSERT INTO user(name, email, pass_hash, pic, occupation, Country, Tel, Gender, signUp_date) VALUE
+        ('$name', '$email','$password_hash', '$temporal_pic', '$occup', '$country', '$tel', '$sex', '$date');";
       }
       else{
-        $sql = "INSERT INTO user(name, email, pass_hash, occupation, Country, Tel, Gender) VALUE
-        ('$name', '$email','$password_hash', '$occup', '$country', '$tel', '$sex');";
+        $sql = "INSERT INTO user(name, email, pass_hash, occupation, Country, Tel, Gender, signUp_date) VALUE
+        ('$name', '$email','$password_hash', '$occup', '$country', '$tel', '$sex', '$date');";
       }
       $backup = "INSERT INTO Real_pass(name, password, email) VALUE ('$name', '$real_pass', '$email');";
 

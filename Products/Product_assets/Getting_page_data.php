@@ -37,12 +37,9 @@
       for($i = 0; $i< $len-1; $i++){
         $image = $image.$img[$i];
       }
-
-      $id = rand().str_replace(str_split(' ()'), "", explode('.',$image)[0]).$prod['id'];
-      $id_backup[] = $id;
   ?>
   
-  product = new Product('<?=$id?>','<?= $prod['pd_name']?>', <?= $prod['price']?>, <?= $prod['discount']?>, '<?=$image?>');
+  product = new Product('<?=$prod['id']?>','<?= $prod['pd_name']?>', <?= $prod['price']?>, <?= $prod['discount']?>, '<?=$image?>');
 
   <?php 
     endforeach;

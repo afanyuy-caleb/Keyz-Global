@@ -169,7 +169,7 @@
             <div class="qnty">
 
               Quantity: &nbsp;
-              <select name="pd_qty" class="pd_qty item_<?=$id_backup[$i]?>">
+              <select name="pd_qty" class="pd_qty item_<?=$products[$i]['id']?>">
 
                 <?php 
                   for($k = 1; $k <=10; $k++):
@@ -186,9 +186,9 @@
             </div> 
             <p>Shipping to <?php echo $feedback['Country']?> in 3 weeks</p>
 
-            <div class="exists exists-alert-<?=$id_backup[$i]?>"></div>
+            <div class="exists exists-alert-<?=$products[$i]['id']?>"></div>
 
-            <button class="add_btn" id="add_btn" data-productId="<?=$id_backup[$i]?>">Add to Cart</button>
+            <button class="add_btn" id="add_btn" data-productId="<?=$products[$i]['id']?>">Add to Cart</button>
 
           </div>
 

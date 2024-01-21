@@ -185,6 +185,7 @@ body{
 .section2 header #menu-icon{
   font-size: 22px;
   color: gray;
+  opacity: 0;
 }
 .search-portion{
   height: 30px;

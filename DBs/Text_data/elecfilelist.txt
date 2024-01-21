@@ -1,108 +1,108 @@
-1 	Headphone 	6.79 	9.09 	headphone.webp
-2 	iphone 13 	118 	221 	iphone 13.webp
-3 	Acer slim laptop 	70 	86 	Acer slim laptop.jpg
-4 	1TB_HDD 	25 	32 	1TB_HDD.webp
-5	Iphone11 New	47	53.26	cool iphone.webp
-6	23inches_slim_monitor	15	23	23inches_slim_monitor.webp
-7	smart Huawei 	56 	64 	smart Huawei.webp
-8	Apple Airpods	23	34	Apple Airpods.jpg
-9	DDR RAM 	7.79	9.08	DDR RAM.webp
-10	Macbook pro 17 	340 	500 	tech17.webp
-11	Light_bulbs 	22 	30 	tech26.webp
-12	headphone 	34 	50 	headphone4.webp
-13 	S30 mobile phone 	145 	160 	S30 mobile phone.webp
-14	Wireless Charger 	102 	115 	wireless phone charger.webp
-15	samsung_pad 	32 	42 	samsung_pad.webp
-16	Iphone 14 pro max	90.12	120.05	14 pro max.webp
-17	Laptop 	230 	267 	laptop1.jpg
-18	Iphone 13 pro max 	230.22 	309 	iphone 13 pro max.webp
-19	Watch 	32 	67 	watch2.jpg
-20	Playstation3 	89 	100 	Playstation3.jpg
-21	Lenovo Legion 	132 	150 	Lenovo Legion.webp
-22	stand_for_company 	123 	143 	stand_for_company.webp
-23	hp gaming pc 	115	122.89	hp gaming pc.webp
-24 	Iphone 14 pro	97	105 	i14_pro.webp
-25 	5G_modem	12.45	15.89	5G_modem.webp
-26 	ssd 	45 	80 	ssd.jpg
-27	k2 mobile 	11.87 	23.86 	k2 mobile.webp
-28	2.2inch mobile phone	78	90	2.2inch mobile phone.webp
-29	Chordless_slim_mouse	12.88	17.92	chordless_slim_mouse.webp
-30	iPad 9th Gen 	78.36	90.25	iPad 9th Gen.jpg
-31	laptop_intelcore 	207.16 	220 	laptop_intelcore.webp
-32	webcam 	43.07 	60.88 	webcam.jpg
-33	smart watch 	75 	90 	smart watch.webp
-34	Telescope 	90 	120 	telescope.jpg
-35	Electric heater 	115 	130.5 	wheater.jpeg
-36	heart tied Headphone 	12	15	headphones.jpg
-37	VGA converter 15 	22 	VGA converter.webp
-38	Lenovo headphones 	32 	45 	Lenovoheadphones.webp
-39	Flat Screen 	32	54	flat_Screen.jpg
-40	transparent screen 	112 	150 	tech23.webp
-41	S23 ultra 	112 	125 	S23 ultra.webp
-42	LCD monitor 	45 	67 	LCDmonitor.webp
-43	4G-5G router	9.8	15	4G-5G router.webp
-44	Curved_monitor 	76	90	curved_monitor.webp
-45	Sandisk MC 	23 	45.67 	Sandisk MC.jpg
-46	TX9gaming_laptop 	320 	400 	TX9gaming_laptop.webp
-47	4G_lite router	10.67	14.23	4G_lite router.webp
-48	Redmi9 	74.32 	90.5 	Redmi9.webp
-49	4G_modem	5.89	7.23	4G_modem.webp
-50	Samsung m7 monitor 	90 	120 	Samsung m& monitor.webp
-51	Laser printer 	67 	90 	printer.webp
-52	Airpod Super 	15 	19	airport1.webp
-53	M7 smart watch 	102 	115 	M7 smart watch.webp
-54	P50 pro Android 	90 	120 	P50 pro Android.webp
-55	macboook pro 	450 	515 	macboook pro.jfif
-56	Smart Watch 	23.46	32	Applewatch.jpg
-57	Ipro cell phone 	12.22 	32.54 	Ipro cell phone.webp
-58	corei7 super PC 	102 	115 	corei7PC.webp
-59	wireless_powerbank 	62.65 	78 	wireless_powerbank.webp
-60	Mi 10T phone 	56 	75 	phone.jpg
-61	OneGx_proPC 	112 	121 	OneGx_proPC.webp
-62	Pure water filter 	94 	112 	wfilter2.jpeg
-63	Gaming Keyboard 	17.73 	25.33 	Keyboard.jpg
-64	Xiaomi pad 	95.25 	105.65 	Xiaomi pad.webp
-65	Laptop 	320.12 	414.3 	laptop4.jpg
-66	Headset 	19	24	Headset.jpg
-67	Macbook style 	215 	275 	tech21.jpeg
-68	Laptop 	135.45 	152.67 	laptop2.jpg
-69	Cool airpod	16	21	cool airport.webp
-70	Curved_monitor 	66.76	72.03	curved_monitor2.webp
-71	Water filter 	68 	90 	wfilter1.jpeg
-72	Macbook pro 	230 	315 	tech11.webp
-73	wireless_keyboard 	55 	78 	wireless_keyboard.webp
-74	Watch 	24 	50 	watch1.jpg
-75	hp_laserjet_printer 	67	90	hp_laserjet_printer.webp
-76	Apple watch 	22	43 	apple watch.webp
-77	Headphone 	16.45 	32.3 	headphone.webp
-78	corei7gamer 	56	72	corei7gamer.webp
-79	Virtual glasses 	12.56	15	606fb78176a92b925db7eb9d9e394337.jpg
-80	SSD_Lenovo_notebook 	120 	145 	SSD_Lenovo_notebook.webp
-81	Macbook love 	300 	350 	tech29.webp
-82	500GB_hDD	23	32	500GB_hDD.webp
-83	Barcode_scanner 	33.56	43	barcode_scanner.webp
-84	wireless_sunglasses 	43.24 	50.75 	wireless_sunglasses.webp
-85	airpots 	23 	50 	wireless_airports.jpg
-86	mini pbs 	86 	97 	mini.jpg
-87	wireless_mouse 	21 	30 	wireless_mouse.webp
-88	S23_ultra 	124 	130 	S23_ultra.webp
-89	webcam 	35 	60 	webcam.jpeg
-90	Controller	12	15	controller.png
-91	mobile stand 	15 	27 	mobile stand.webp
-92	Smart watch 	35.22 	watch4.jpg
-93	ssd2 	24 	50 	ssd2.webp
-94	Laptop 	106 	112 	laptop3.jpg
-95	Acer_aspire laptop 	112 	120 	acer_aspire.jpg
-96	Headphone	23.46	30.77	headphone2.webp
-97	ipad 	45.6	78.32	ipad.webp
-98	LCD tablet 	56.98 	75 	LCD tablet.webp
-99	Samsung monitor 	75 	90 	Samsung monitor.webp
-100	S24 ultra 	130 	152 	s24 ultra.webp
-101	Smart watch 	34 	50 	watch3.jpg
-102	mobile 	65.22 	72 	mobile.webp
-103	touch screen 	123 	140 	touch screen.webp
-104	Transparent Nokia	115	45	1878da40de5bf45741bd086a961c3d4b.jpg
-105	Flash drive 	13.28	16.78	Flash.webp
-106	64gbpendrive	20	23	64gbpendrive.webp
-107	solar power bank 	43 	57 	solar power bank.webp
-108	SSD 	47 	80 	SSD.webp
+5hnw3a2hboepeped4	Headphone 	6.79 	9.09 	headphone.webp
+p1w34e274b	iphone 13 	118 	221 	iphone 13.webp
+pl776pgoa7jp	Acer slim laptop 	70 	86 	Acer slim laptop.jpg
+wHbeDpB15T_103D	1TB_HDD 	25 	32 	1TB_HDD.webp
+nhibe3p87p4oew	Iphone11 New	47	53.26	cool iphone.webp
+esrce92o3sh2obr2_imi51sws5onc0m_	23inches_slim_monitor	15	23	23inches_slim_monitor.webp
+72eibe5pHwaw2u	smart Huawei 	56 	64 	smart Huawei.webp
+7ppjArsg9oid17	Apple Airpods	23	34	Apple Airpods.jpg
+p8MAbweR127	DDR RAM 	7.79	9.08	DDR RAM.webp
+hc54eew791bp7	Macbook pro 17 	340 	500 	tech17.webp
+b42ce06w3p2he	Light_bulbs 	22 	30 	tech26.webp
+nhe4we8e5doahpp14b	headphone 	34 	50 	headphone4.webp
+oe1he5p9wnbp	S30 mobile phone 	145 	160 	S30 mobile phone.webp
+hperwg52arecb7	Wireless Charger 	102 	115 	wireless phone charger.webp
+bmaewsgpp8as94d_n6u	samsung_pad 	32 	42 	samsung_pad.webp
+e6b5m52waxp	Iphone 14 pro max	90.12	120.05	14 pro max.webp
+574ogpja91ppl	Laptop 	230 	267 	laptop1.jpg
+pe9bxw05am	Iphone 13 pro max 	230.22 	309 	iphone 13 pro max.webp
+2ca5w4phj27g	Watch 	32 	67 	watch2.jpg
+1njaPp4ysgoi3l3a	Playstation3 	89 	100 	Playstation3.jpg
+oi4wbgpe8e2n9L	Lenovo Legion 	132 	150 	Lenovo Legion.webp
+6obmnfor7a7_ep2ydwpsc_an	stand_for_company 	123 	143 	stand_for_company.webp
+4cwpb17pe8	hp gaming pc 	115	122.89	hp gaming pc.webp
+orib31pe_56pw41	2Iphone 14 pro	97	105 	i14_pro.webp
+be5ew185m1_G_	25G_modem	12.45	15.89	5G_modem.webp
+d4pg51sjs5	2ssd 	45 	80 	ssd.jpg
+l9op9mb5eiebw6	k2 mobile 	11.87 	23.86 	k2 mobile.webp
+poe36b0w9ephn	2.2inch mobile phone	78	90	2.2inch mobile phone.webp
+ees7_28sohs_mrse2m7u1lsbiow1lhi9csroeu_d	Chordless_slim_mouse	12.88	17.92	chordless_slim_mouse.webp
+58p5Gn2jge	iPad 9th Gen 	78.36	90.25	iPad 9th Gen.jpg
+rpwpop_6ceiela96lno2eb	laptop_intelcore 	207.16 	220 	laptop_intelcore.webp
+g1c1b6e8pwajm	webcam 	43.07 	60.88 	webcam.jpg
+8a6p4wcbe9hw	smart watch 	75 	90 	smart watch.webp
+g3lcs7opje16eep	Telescope 	90 	120 	telescope.jpg
+ehej9g403wrpea	Electric heater 	115 	130.5 	wheater.jpeg
+e26g6enpsh5oa7dj	heart tied Headphone 	12	15	headphones.jpg
+2eonrcwrbeve40p0	VGA converter 15 	22 	VGA converter.webp
+ve98oa7nwhpeobeopehnL8ds	Lenovo headphones 	32 	45 	Lenovoheadphones.webp
+362jfpl_reS5e47agnc	Flat Screen 	32	54	flat_Screen.jpg
+5we8b1h03c2ep	transparent screen 	112 	150 	tech23.webp
+446aeuwbpr9l	S23 ultra 	112 	125 	S23 ultra.webp
+imCpno1rbw71o4LeD	LCD monitor 	45 	67 	LCDmonitor.webp
+8w8eo6rburep9	4G-5G router	9.8	15	4G-5G router.webp
+du9nr_2b0cropeomie706v97w	Curved_monitor 	76	90	curved_monitor.webp
+04pMC4gj3	Sandisk MC 	23 	45.67 	Sandisk MC.jpg
+b8wg5ip9pTm4_n8lpXaoaeg	TX9gaming_laptop 	320 	400 	TX9gaming_laptop.webp
+w9oerur49epb6	4G_lite router	10.67	14.23	4G_lite router.webp
+beR45di9mwp3e6	Redmi9 	74.32 	90.5 	Redmi9.webp
+48e1em4_22bde1mo5d4mp7G9Go_wm3	4G_modem	5.89	7.23	4G_modem.webp
+e5bwpr1ionmo22	Samsung m7 monitor 	90 	120 	Samsung m& monitor.webp
+ipp1ebn53rwe2r	Laser printer 	67 	90 	printer.webp
+pw0r5r11	ebpa9io58	Airpod Super 	15 	19	airport1.webp
+8ww50h9pcbea	M7 smart watch 	102 	115 	M7 smart watch.webp
+erApon1idb4dw45	P50 pro Android 	90 	120 	P50 pro Android.webp
+22ofjpf1i7r	macboook pro 	450 	515 	macboook pro.jfif
+2pjl2p	33	86p33agh2c4eAw	Smart Watch 	23.46	32	Applewatch.jpg
+n7ee74owppbh2	Ipro cell phone 	12.22 	32.54 	Ipro cell phone.webp
+PbCwp89ir1ee8o7c	corei7 super PC 	102 	115 	corei7PC.webp
+1n3i8rore_8pwawelebbkwpses	wireless_powerbank 	62.65 	78 	wireless_powerbank.webp
+oje0n00gp5hp	Mi 10T phone 	56 	75 	phone.jpg
+e2p9_Oobnp4GCewP1rx	OneGx_proPC 	112 	121 	OneGx_proPC.webp
+pelj0if92wrge31	Pure water filter 	94 	112 	wfilter2.jpeg
+jb8o79gy9edarpK	Gaming Keyboard 	17.73 	25.33 	Keyboard.jpg
+a2wppd4eb18	Xiaomi pad 	95.25 	105.65 	Xiaomi pad.webp
+0o22g04lappjp	Laptop 	320.12 	414.3 	laptop4.jpg
+2319dp11H	aej	se94g	Headset 	19	24	Headset.jpg
+hcj1p402ge30e	Macbook style 	215 	275 	tech21.jpeg
+2pp2p2jog91al	Laptop 	135.45 	152.67 	laptop2.jpg
+6bp4eorrwi3a3p	Cool airpod	16	21	cool airport.webp
+dicwvonr	729obr063eue422_m77	p66	Curved_monitor 	66.76	72.03	curved_monitor2.webp
+7re5e4giwl1pjf9	Water filter 	68 	90 	wfilter1.jpeg
+2w1hbpe168c4e	Macbook pro 	230 	315 	tech11.webp
+de3o_eb7piarssk5l6ybwweer	wireless_keyboard 	55 	78 	wireless_keyboard.webp
+c1h18a6jpwg6	Watch 	24 	50 	watch1.jpg
+er0pwh_75er_6ajrni1bpspl19e4e	hp_laserjet_printer 	67	90	hp_laserjet_printer.webp
+bcha2e1wpw74	Apple watch 	22	43 	apple watch.webp
+pwe9odben7p71heha	Headphone 	16.45 	32.3 	headphone.webp
+1r1p8e5br7gewoa2m6eci67		corei7gamer 	56	72	corei7gamer.webp
+21329p693bb510dg1a73e6b69f1957d	9875jeb7052	164	Virtual glasses 	12.56	15	606fb78176a92b925db7eb9d9e394337.jpg
+newkDvSp_noo6e0Seob7_bLo9o	SSD_Lenovo_notebook 	120 	145 	SSD_Lenovo_notebook.webp
+e9be96h6wc9p2	Macbook love 	300 	350 	tech29.webp
+005w_9B025D0230GhD5BD3_b2ehGpD	500GB_hDD	23	32	500GB_hDD.webp
+5es133b5er_n6conwd3racebp4a06	Barcode_scanner 	33.56	43	barcode_scanner.webp
+lnlusews98aesgisswe4pe2_rsb	wireless_sunglasses 	43.24 	50.75 	wireless_sunglasses.webp
+asg1pr2js_rpswlee4iiro4	airpots 	23 	50 	wireless_airports.jpg
+g3ijn90ipm6minipbs	86 	97 	mini.jpg
+7i3p5ebssmuwwel_rso9ee	wireless_mouse 	21 	30 	wireless_mouse.webp
+8S_9lp1ubrwe327a	S23_ultra 	124 	130 	S23_ultra.webp
+ee9p5bm0gj4acw	webcam 	35 	60 	webcam.jpeg
+4nro9ernrgpo5lo2r1l1nl1eC9ocl	Controller	12	15	controller.png
+n1e7p3sawdb2	mobile stand 	15 	27 	mobile stand.webp
+wa13g47pchj3	Smart watch 	35.22 	watch4.jpg
+s86s2b7epdw	ssd2 	24 	50 	ssd2.webp
+lo6gp42pa3pj	Laptop 	106 	112 	laptop3.jpg
+se88p6pra_rcag6iej	Acer_aspire laptop 	112 	120 	acer_aspire.jpg
+aneeowe0p9hd7223761o44hpen73eHapdhb	Headphone	23.46	30.77	headphone2.webp
+3bpa4w5i80de06270p3	ipad 	45.6	78.32	ipad.webp
+epl4ae93wb4b	LCD tablet 	56.98 	75 	LCD tablet.webp
+ne9iwmorb3p3o8	Samsung monitor 	75 	90 	Samsung monitor.webp
+ab2w2r1ulep2	S24 ultra 	130 	152 	s24 ultra.webp
+hgca53pwj5	Smart watch 	34 	50 	watch3.jpg
+b8bew3p9o8ielm	mobile 	65.22 	72 	mobile.webp
+ern9b4s0eepwc	touch screen 	123 	140 	touch screen.webp
+4bj5i54da16501361da58b9e34fd7c841N0bk457	Transparent Nokia	115	45	1878da40de5bf45741bd086a961c3d4b.jpg
+7weh81b03721p62s8al0F	Flash drive 	13.28	16.78	Flash.webp
+rigervdde54pp6neeeibbv206n52w26b43gp	64gbpendrive	20	23	64gbpendrive.webp
+kba165nebp2w	solar power bank 	43 	57 	solar power bank.webp
+9bw5Sp65SeD	SSD 	47 	80 	SSD.webp

@@ -133,8 +133,7 @@
       </div>
 
       <div class="image-section">
-        <i class='far fa-bell'></i>
-        
+       
         <img src="images/profile-pics/<?php echo $pic??'default.jpg'; ?>" alt="">
         <hr>
         <div class="parag">

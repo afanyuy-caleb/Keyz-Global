@@ -26,7 +26,6 @@ export function AddToCart(id, item_qty){
   cart.push({
     id,
     item_qty,
-    delOptionId: '2'
   });
   cart_qty_id.innerText = cart.length;
   UpdateStorage();

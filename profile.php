@@ -66,7 +66,7 @@
         <i class="fas fa-globe"></i>
         <p> Keyz-<span>Global</span> </p>
       </div>
-      <i id="menu" class='bx bx-menu'></i>
+      <i id="menu" class='fas fa-bars'></i>
       <div class="header-search">
         <div class="all-products">
           <i class='bx bx-grid-small'></i>
@@ -87,11 +87,11 @@
         </div>
 
         <input id="input" type="text" placeholder="Get whatever you feel...">
-        <i id="search-button" class='bx bx-search'></i>
+        <i id="search-button" class='fas fa-search'></i>
       </div>
       
       <nav class="navigation">
-        <a href="Cart/index.php"><i class='bx bx-cart-alt' id="cart"></i></a>
+        <a href="Cart/index.php"><i class='fas fa-cart-shopping' id="cart"></i></a>
         <h3>
           <?php echo $name ?>
         </h3>
@@ -104,24 +104,24 @@
     <main>
       <section class="section1">
         <div>
-          <i class='bx bxs-user'></i>
+          <i class='fas fa-user'></i>
           <p id="prof-title">My profile</p>
         </div>
 
         <form method="POST">
           
           <input type="submit" value="Dashboard" name="dash">
-           <input type="submit" value="Personalize" name="Personalize">
+          <input type="submit" value="Personalize" name="Personalize">
           <input type="submit" value="Change password" name="chang_pass">
 
         </form>
 
         <a href="Cart/index.php">
-          <i class='bx bxs-cart-alt'></i>
+          <i class='fas fa-cart-shopping'></i>
           <span>My Orders</span>
         </a>
         <a href="Cart/index.php">
-          <i class='bx bxs-wallet'></i>
+          <i class='fas fa-wallet'></i>
           <span>My Wallet</span>
         </a>
 
@@ -129,8 +129,8 @@
 
       <section class="profile-section">
         <div class="image">
-          <img src="images/profile-pics/<?php echo $picture; ?>" alt=""> 
-          <i class="bx bx-camera" id="camera"></i> 
+          <img src="images/profile-pics/<?php echo $picture; ?>" alt=""/> 
+          <i class='fas fa-camera' id="camera" title="edit image"></i> 
         </div>
 
         <h4><?php 
@@ -185,8 +185,13 @@
           <div>
             <h6>Time Zone</h6>
             <p>Cameroon-WAT-Africa/Douala</p>
-            <p> <?php echo date("Y F j "); ?></p>
+            <p> <?php echo date("Y M j "); ?></p>
           </div> 
+        </div>
+
+        <div class="edit-profile-btn">
+          <i class='fas fa-pen'></i>
+          <span>Edit profile</span>
         </div>
 
       </section>

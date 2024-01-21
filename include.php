@@ -18,10 +18,10 @@
           <img src="images/tech/tech14.jpeg" alt="">
         </div>
         <div class="img_div">
-          <img src="images/Wallpapers/artificial-intelligence-technology-futuristic-science.jpg" alt="">
+          <img src="images/Wallpapers/AI-wallpaper2.jpg" alt="">
         </div>
         <div class="img_div">
-          <img src="images/Wallpapers/1116570-digital-art-fantasy-art-anime-artwork-blue-glass-artificial-intelligence-Carnival-age-of-wonders-3-ART-color-screenshot-computer-wallpaper.jpg" alt="">
+          <img src="images/Wallpapers/transit-Wallpaper.jpg" alt="">
         </div>
       </div>  
       

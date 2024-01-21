@@ -291,13 +291,14 @@ section .payment{
   display: flex;
   flex-direction: column;
   gap: 2%;
-  padding: 2%;
-  display: none;
-  transition: display 0.3s ease;
+  height: 0px;
+  transition: 0.3s;
+  overflow: hidden;
 }
 
 .shipping-options.active{
-  display: block;
+  height: inherit;
+  padding: 2%;
 }
 
 .shipping-options:hover{
