@@ -127,10 +127,6 @@
   <section class="section2">
     <header>
       <i class='fas fa-bars' id="menu-icon"></i>
-      <div class="search-portion">
-        <input type="text" placeholder="search for activities here">
-        <i class='fas fa-search'></i>
-      </div>
 
       <div class="image-section">
        

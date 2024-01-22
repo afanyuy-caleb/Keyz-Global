@@ -1,0 +1,180 @@
+*{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border-radius: 10px; */
+}
+
+body{
+  background: rgb(188, 188, 249);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+main{
+  background: rgb(230, 242, 253);
+  height: 85%;
+  width: 75%;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(7,7,7,0.4);
+  padding-top: 1.5%;
+  padding-left: 8%;
+}
+
+main .user-info{
+  position: absolute;
+  left : -15%;
+  top: 10%;
+  height: 80%;
+  width: 25%;  
+  background: rgb(92, 100, 237);
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  color: white;
+  padding: 3px;
+  font-size: 1.3em;
+}
+
+
+.logo p{
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+  font-weight: bolder;
+  padding-left: 3px;
+}
+
+.prof-image{
+  height: 40%;
+  background: linear-gradient(90deg, rgb(194, 194, 251), rgb(128, 215, 244));
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3%;
+}
+.prof-image img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.prof-image .user{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(61, 55, 55);
+}
+.prof-image .user p{
+  width: 80%;
+  text-align: center;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.links a{
+  text-decoration: none;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  color: rgb(222, 230, 234);
+  transition: 0.3s;
+}
+
+.links a:hover{
+  background: aliceblue;
+  color:rgb(51, 48, 48);
+}
+
+.links form{
+  width: 100%;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.links form input[type="submit"]{
+  outline: none;
+  background: aliceblue;
+  border: none;
+  padding: 5px 8px;
+  font-weight: 500;
+}
+
+.section2{
+  height: 100%;
+  padding: 4px;
+}
+
+.section2 div{
+  padding-bottom: 8px;
+}
+.section2 .title{
+  font-family: 'Prata';
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 1.2em;
+}
+
+.section2 .top{
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  width: 100%;
+  gap: 2%;
+  height: 80px;
+  padding-left: 5%;
+}
+
+.top div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(7,7,7,0.4);
+}
+
+.top div:nth-child(1){
+  background: rgb(51, 196, 51)
+}
+
+.top div:nth-child(2){
+  background: rgb(183, 34, 200)
+}
+
+.top div:nth-child(3){
+  background: rgb(37, 166, 218)
+}
+
+main .transactions{
+  color: rgb(51, 48, 48);
+  height: 80%;
+  height: 100%;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.15em;
+
+}
+

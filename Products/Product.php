@@ -180,8 +180,7 @@
                 
                 endfor;
               ?>
-              </select>
-              
+              </select>              
 
             </div> 
             <p>Shipping to <?php echo $feedback['Country']?> in 3 weeks</p>

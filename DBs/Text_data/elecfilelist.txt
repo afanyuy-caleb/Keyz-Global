@@ -49,11 +49,11 @@ beR45di9mwp3e6	Redmi9 	74.32 	90.5 	Redmi9.webp
 48e1em4_22bde1mo5d4mp7G9Go_wm3	4G_modem	5.89	7.23	4G_modem.webp
 e5bwpr1ionmo22	Samsung m7 monitor 	90 	120 	Samsung m& monitor.webp
 ipp1ebn53rwe2r	Laser printer 	67 	90 	printer.webp
-pw0r5r11	ebpa9io58	Airpod Super 	15 	19	airport1.webp
+pw0r5r11ebpa9io58   Airpod Super 	15 	19	airport1.webp
 8ww50h9pcbea	M7 smart watch 	102 	115 	M7 smart watch.webp
 erApon1idb4dw45	P50 pro Android 	90 	120 	P50 pro Android.webp
-22ofjpf1i7r	macboook pro 	450 	515 	macboook pro.jfif
-2pjl2p	33	86p33agh2c4eAw	Smart Watch 	23.46	32	Applewatch.jpg
+22ofjpf1i7r	macboook pro 	450 	515 	macboook pro.jpg
+2pjl2p  Smart Watch 	23.46	32	Applewatch.jpg
 n7ee74owppbh2	Ipro cell phone 	12.22 	32.54 	Ipro cell phone.webp
 PbCwp89ir1ee8o7c	corei7 super PC 	102 	115 	corei7PC.webp
 1n3i8rore_8pwawelebbkwpses	wireless_powerbank 	62.65 	78 	wireless_powerbank.webp
@@ -63,11 +63,11 @@ pelj0if92wrge31	Pure water filter 	94 	112 	wfilter2.jpeg
 jb8o79gy9edarpK	Gaming Keyboard 	17.73 	25.33 	Keyboard.jpg
 a2wppd4eb18	Xiaomi pad 	95.25 	105.65 	Xiaomi pad.webp
 0o22g04lappjp	Laptop 	320.12 	414.3 	laptop4.jpg
-2319dp11H	aej	se94g	Headset 	19	24	Headset.jpg
+2319dp11H   Headset 	19	24	Headset.jpg
 hcj1p402ge30e	Macbook style 	215 	275 	tech21.jpeg
 2pp2p2jog91al	Laptop 	135.45 	152.67 	laptop2.jpg
 6bp4eorrwi3a3p	Cool airpod	16	21	cool airport.webp
-dicwvonr	729obr063eue422_m77	p66	Curved_monitor 	66.76	72.03	curved_monitor2.webp
+dicw729obr063eue422_m77   Curved_monitor  66.76   72.03   curved_monitor2.webp
 7re5e4giwl1pjf9	Water filter 	68 	90 	wfilter1.jpeg
 2w1hbpe168c4e	Macbook pro 	230 	315 	tech11.webp
 de3o_eb7piarssk5l6ybwweer	wireless_keyboard 	55 	78 	wireless_keyboard.webp
@@ -76,7 +76,7 @@ er0pwh_75er_6ajrni1bpspl19e4e	hp_laserjet_printer 	67	90	hp_laserjet_printer.web
 bcha2e1wpw74	Apple watch 	22	43 	apple watch.webp
 pwe9odben7p71heha	Headphone 	16.45 	32.3 	headphone.webp
 1r1p8e5br7gewoa2m6eci67		corei7gamer 	56	72	corei7gamer.webp
-21329p693bb510dg1a73e6b69f1957d	9875jeb7052	164	Virtual glasses 	12.56	15	606fb78176a92b925db7eb9d9e394337.jpg
+9875jeb7052   Virtual glasses 	12.56	15	606fb78176a92b925db7eb9d9e394337.jpg
 newkDvSp_noo6e0Seob7_bLo9o	SSD_Lenovo_notebook 	120 	145 	SSD_Lenovo_notebook.webp
 e9be96h6wc9p2	Macbook love 	300 	350 	tech29.webp
 005w_9B025D0230GhD5BD3_b2ehGpD	500GB_hDD	23	32	500GB_hDD.webp
@@ -89,7 +89,7 @@ g3ijn90ipm6minipbs	86 	97 	mini.jpg
 ee9p5bm0gj4acw	webcam 	35 	60 	webcam.jpeg
 4nro9ernrgpo5lo2r1l1nl1eC9ocl	Controller	12	15	controller.png
 n1e7p3sawdb2	mobile stand 	15 	27 	mobile stand.webp
-wa13g47pchj3	Smart watch 	35.22 	watch4.jpg
+wa13g47pchj3	Smart watch   29.05 	35.22 	watch4.jpg
 s86s2b7epdw	ssd2 	24 	50 	ssd2.webp
 lo6gp42pa3pj	Laptop 	106 	112 	laptop3.jpg
 se88p6pra_rcag6iej	Acer_aspire laptop 	112 	120 	acer_aspire.jpg

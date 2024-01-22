@@ -72,7 +72,7 @@
       <div class="profile-links">
 
         <a href="profile.php">My profile</a>
-        <a href="Cart/index.php">Change password</a>
+        <a href="changepass.php">Change password</a>
         <a href="Cart/index.php">My Orders</a>
         <a href="Cart/index.php">My Wallet</a>
         <form action="" method="POST">

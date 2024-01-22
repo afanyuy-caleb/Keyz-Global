@@ -1,15 +1,11 @@
-<?php
-
-    //Trying to create a unanimous data search page for all the product pages.. Will it work?
-
-    $select = "SELECT * FROM $table";
-    $products = $pdconn->query($select);
-    $products = $products->fetch_all(MYSQLI_ASSOC);
-?>
 
 <!-- This page gets the info from the server and saves it to the JS -->
   
 <?php
+
+    $select = "SELECT * FROM $table";
+    $products = $pdconn->query($select);
+    $products = $products->fetch_all(MYSQLI_ASSOC);
 
     if($_POST){
         if(isset($_POST['dashboard'])){
@@ -65,7 +61,5 @@
     $range = ceil($pd_count/20); #Number of slides i suppose
 
     echo '<script> let last_slide ='.$range.'</script>';
-
-    include_once('./Product_assets/Getting_page_data.php')
 
 ?>

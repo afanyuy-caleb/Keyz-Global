@@ -4,6 +4,7 @@
   include_once('../db_ops/database-connect.php');
 
   if($_POST){
+
     $alert_msg = "";
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -18,12 +19,10 @@
 
     $feedback = $result->fetch_assoc();
 
-    if($feedback){
-      $_SESSION['email-address'] = $email;
-      $_SESSION['values'] = $feedback;
-      
-        
+    if($feedback){    
       if(password_verify($password, $feedback['pass_hash'])){
+        $_SESSION['email-address'] = $email;
+        $_SESSION['values'] = $feedback;
 
         if($feedback['role_id'] == 1){
           header("Location:../dashboard.php");
@@ -36,5 +35,6 @@
       }
     }
     $error_msg = "Incorrect Email or password";
+
   }
 ?>
