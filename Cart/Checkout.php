@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="../styles/font.css">
   <link rel="stylesheet" href="../font/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -16,7 +17,12 @@
     <i class="fas fa-face-smile"></i>
     <h2>Payment successful!</h2>
     <a href="../homepage.php" class="back-btn">Back to Home</a>
+    <div class="server">
+    
+    </div>
   </div>
+  
    
+  <script type="module" src="JS_cart/submit.js"></script>
 </body>
 </html>

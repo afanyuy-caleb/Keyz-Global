@@ -2,6 +2,11 @@
   
   session_start();
 
+  if(!isset($_SESSION['values'])){
+    header("Location: index.php");
+    exit();
+  }
+  
   include_once('db_ops/database-select.php');
 
   if(isset($_POST['logout'])){

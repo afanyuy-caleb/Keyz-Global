@@ -1,0 +1,36 @@
+<?php
+
+  session_start();
+
+  if($_REQUEST){  
+    include_once '../db_ops/database-select.php';
+
+    $user_id = $feedback['id'];
+    $amount = $_REQUEST['amt'];
+    $cart = $_REQUEST['cart'];
+    $cartString = $_REQUEST['cartString'];
+    $date = $_REQUEST['date'];
+
+    foreach($cart as $cartItem){
+      $id = $cartItem['id'];
+      $table = $cartItem['table_name'];
+      $qty = $cartItem['item_qty'];
+
+      $update = "SELECT total_purchases from products.$table where $table.id = '$id'";
+      $query = $conn->query($update);
+      $result = $query->fetch_column();
+
+      $new_purchase = $result+$qty;
+      
+      $update = "UPDATE products.$table SET $table.total_purchases = $new_purchase WHERE $table.id = '$id'";
+
+      $query = $conn->query($update);
+    }
+
+    $insert = "INSERT INTO user_trans(user_id, transId, Date, Amount, transString) VALUES ($user_id, 1, '$date', $amount, '$cartString')";
+
+    $query = $conn->query($insert);
+
+    if($query) echo 1;
+  }
+?>

@@ -1,7 +1,12 @@
 <?php
   session_start();
-  include_once('db_ops/database-select.php');
+  
+  if(!isset($_SESSION['values'])){
+    header("Location: index.php");
+    exit();
+  }
 
+  include_once 'dashboard-data.php';
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +22,7 @@
 
   <link rel="stylesheet" href="styles/client-dash.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
@@ -72,7 +78,7 @@
       <div class="top">
         <div>
           Total Purchases
-          <span id="tot-purch">0</span>
+          <span id="tot-purch"><?= $total_purchases?></span>
         </div>
         <div>
           Total Downloads
@@ -86,20 +92,45 @@
 
       <div class="transactions">
         Recent Transactions
+        
+      </div>
+
+      <div class="details-section">
+        <div class="table">
+          <table>
+            <tr>
+              <th>S/N</th>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Amount</th>
+            </tr>
+
+            <?php
+              $sn = 1;
+              foreach($trans as $tran):
+                $type = getTrans($conn, $tran['transId']);        
+            ?>
+            <tr>
+              <td><?= $sn?></td>
+              <td><?= $tran['Date']?></td>
+              <td><?= $type?></td>
+              <td>&dollar;<?= $tran['Amount']?></td>
+              <td><i class="fas fa-circle-info det"  title="More details"></i></td>
+            </tr>
+
+            <?php
+                $sn++;
+              endforeach;
+            ?>
+          </table>
+        
+        </div>
+
+        <div class="details">
+          Details
+        </div>
       </div>
       
-      <table>
-        <tr>
-          <th>Date</th>
-          <th>Type</th>
-          <th>Amount</th>
-        </tr>
-        <tr>
-          <td>20/05/2019</td>
-          <td>Purchase</td>
-          <td>20,000</td>
-        </tr>
-      </table>
     </section>
   </main>
   

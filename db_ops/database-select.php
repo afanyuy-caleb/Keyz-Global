@@ -4,8 +4,11 @@
 
   if(isset($_SESSION['email-address'])){
 
-    $email = $_SESSION['values']['email'];
-    $feedback = $_SESSION['values'];
+    $email = $_SESSION['email-address'];
+    
+    $select = "SELECT * from user where email = '$email'";
+    $feedback = $conn->query($select);
+    $feedback = $feedback->fetch_assoc();
     
     $name = $feedback['name'];
     $prof = $feedback['occupation'];

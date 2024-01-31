@@ -59,7 +59,6 @@
         $error = "Results Not Found";
     }
     $range = ceil($pd_count/20); #Number of slides i suppose
-
     echo '<script> let last_slide ='.$range.'</script>';
 
 ?>

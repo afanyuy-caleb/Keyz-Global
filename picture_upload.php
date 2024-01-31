@@ -1,6 +1,5 @@
 <?php
 
-  include_once('db_ops/database-connect.php');
   $allowed_ext = ['png', 'jpg', 'jpeg', 'wpeg','gif', 'webp', 'avif'];
 
   if(!empty($_SESSION['values']['email'])){

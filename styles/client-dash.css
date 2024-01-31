@@ -170,11 +170,39 @@ main .user-info{
 
 main .transactions{
   color: rgb(51, 48, 48);
-  height: 80%;
-  height: 100%;
   font-weight: 500;
-  text-align: center;
   font-size: 1.15em;
-
 }
 
+main .details-section{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  padding: 1%;
+}
+
+.table table{
+  width: 100%;
+}
+table tr{
+  border-bottom: 1px groove rgb(193, 190, 190);
+}
+table tr th, td{
+  text-align: left;
+  padding: 3px;
+}
+
+table tr td{
+  color: rgb(71, 70, 70);
+  height: 40px;
+}
+
+td .det{
+  font-size: 1.2em;
+}
+
+main .details-section .details{
+  background: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}

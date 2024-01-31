@@ -2,23 +2,29 @@
 
   session_start();
 
-  include_once('picture_upload.php');
+  if(!isset($_SESSION['values'])){
+    header("Location: index.php");
+    exit();
+  }
+
+  include_once 'db_ops/database-connect.php';
+
   include_once('db_ops/database-select.php');
+  include_once('picture_upload.php');
 
   /* The save function */
-  if($_POST){
-    if(isset($_POST['dash'])){
-      if($feedback['role_id'] != 1){
-        header("Location: client-dashboard.php");
-      }
-      else{
-        header("Location:dashboard.php");
-      }
+  if(isset($_POST['dash'])){
+    if($feedback['role_id'] != 1){
+      header("Location: client-dashboard.php");
     }
-    else if(isset($_POST['chang_pass'])){
-      header("Location: changepass.php");
+    else{
+      header("Location:dashboard.php");
     }
   }
+  else if(isset($_POST['chang_pass'])){
+    header("Location: changepass.php");
+  }
+
   if(isset($_POST['save'])){
       header('Location:homepage.php');
     }
@@ -36,7 +42,7 @@
     $picture = "profile.png";
     $profile_pic = " ";
   }
-}
+  }
   if(!isset($message)){
     $message = "";
   }
@@ -67,7 +73,8 @@
         <p> Keyz-<span>Global</span> </p>
       </div>
       <i id="menu" class='fas fa-bars'></i>
-      <div class="header-search">
+      
+      <nav class="navigation">
         <div class="all-products">
           <i class='bx bx-grid-small'></i>
           <p>All products</p>
@@ -85,12 +92,7 @@
             <a href="Products/Wallpapers.php">Wallpapers</a> 
           </div>
         </div>
-
-        <input id="input" type="text" placeholder="Get whatever you feel...">
-        <i id="search-button" class='fas fa-search'></i>
-      </div>
       
-      <nav class="navigation">
         <a href="Cart/index.php"><i class='fas fa-cart-shopping' id="cart"></i></a>
         <h3>
           <?php echo $name ?>

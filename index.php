@@ -61,7 +61,7 @@
   <script>
     localStorage.removeItem('cart');
     localStorage.removeItem('products')
-    localStorage.removeItem('tableName')
+    localStorage.removeItem('tableName');
   </script>
   
   <script src="JS/index.js"></script>

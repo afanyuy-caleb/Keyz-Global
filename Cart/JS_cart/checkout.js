@@ -4,8 +4,6 @@ import {formatCurrency} from './utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 var localData = JSON.parse(localStorage.products)
-console.log(cart)
-console.log(localData)  
 
 function shippingOptions(shipping_id){
   let html = '';
@@ -114,8 +112,10 @@ function renderPage(received_id){
   
   let ship_amt = shippingPrice ? '$'+formatCurrency(shippingPrice) : shippingPrice == 0 ? 'FREE' : 'Not set';
 
-  let tot_amt = shippingPrice ? formatCurrency(shippingPrice) + amt : amt;
+  let sub_total = shippingPrice ? formatCurrency(shippingPrice) + amt : amt;
   let tax_amt = formatCurrency(amount * 10);
+  let totalAmt = (Number(tax_amt) + sub_total).toFixed(2);
+  sessionStorage.total_amt = JSON.stringify(totalAmt);
 
   var summaryHtml =  `
     <div class="ship-options-section" title="Ship Options">
@@ -150,7 +150,7 @@ function renderPage(received_id){
           Total before tax:
         </span>
         <span class="tot-amt">
-          $${tot_amt}
+          $${sub_total}
         </span>
       </div>
       <div> 
@@ -167,7 +167,7 @@ function renderPage(received_id){
           Order Total
         </span>
         <span>
-          $${(Number(tax_amt) + tot_amt).toFixed(2)}
+          $${totalAmt}
         </span>
       </div>
       
@@ -205,7 +205,7 @@ function renderPage(received_id){
 
     <hr>
     <div class="Pay-btn">
-      <a href="./Checkout.php" type="submit" class="submit-payment">        Confirm & Pay
+      <a href="./Checkout.php" type="submit" class="submit-payment">Confirm & Pay
       </a>
 
     </div>
@@ -269,6 +269,7 @@ function renderPage(received_id){
   })
   delBtn.forEach((del, index)=>{
     del.addEventListener('click', ()=>{
+      
       delFromCart(del.dataset.delPd);
       renderPage();
     })
@@ -292,7 +293,6 @@ function renderPage(received_id){
       renderPage();
     })
   })
-
 }
 
 renderPage()

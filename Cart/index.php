@@ -1,9 +1,14 @@
 <?php
 
   session_start();
-  include_once('../db_ops/database-connect.php');
-  include_once('../db_ops/database-select.php');
 
+  if(!isset($_SESSION['values'])){
+    header("Location: index.php");
+    exit();
+  }
+  else{
+    include_once '../db_ops/database-select.php';
+  }
 ?>
 
 <!DOCTYPE html>

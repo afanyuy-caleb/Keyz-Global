@@ -11,18 +11,7 @@ body{
 .scrollbg{
   padding: 5px 40px;
 }
-
-.header-search{
-  display: flex;
-  align-items: center;
-  height: 37px;
-  gap: 10px;
-  padding-left: 10px;
-  border: 1px solid lightgray;
-  flex: 0.9;
-  border-radius: 20px;
-}
-.header-search .all-products{
+.all-products{
   display: inline-flex;
   align-items: center; 
 }
@@ -61,19 +50,6 @@ body{
 .products a:hover{
   background:rgb(88, 88, 250);
   color: white;
-}
-.header-search #input{
-  flex: 1;
-  border: none;
-  outline: none;
-  height: 85%;
-  border-left: 1px solid grey;
-  padding-left: 10px;
-  background: transparent;
-}
-#search-button{
-  font-size: 1.25em;
-  margin-right: 8px;
 }
 main{
   display: flex;

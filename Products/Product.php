@@ -1,10 +1,15 @@
 
 <?php
-    include_once('../db_ops/database-connect.php');
-    include_once('../db_ops/database-select.php');
-    include_once('../db_ops/Prd-db-cnct.php');
 
-    include_once('Product_assets/Data_search.php');
+  if(!isset($_SESSION['values'])){
+    header("Location: ../index.php");
+    exit();
+  }
+
+  include_once('../db_ops/database-select.php');
+  include_once('../db_ops/Prd-db-cnct.php');
+
+  include_once('Product_assets/Data_search.php');
 
 ?>
 
