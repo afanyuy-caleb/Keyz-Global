@@ -2,7 +2,7 @@
 
   session_start();
   $title = 'Epic Wallpapers';
-  $table = 'Wallpaper';
+  $table = 'wallpaper';
   $img_folder = 'Wallpapers';
   $bg_image = "Wallpapers/nat14.jpg";
 

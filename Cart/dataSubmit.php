@@ -11,6 +11,7 @@
     $cartString = $_REQUEST['cartString'];
     $date = $_REQUEST['date'];
 
+    // update the total_purchases of each product that has been purchased
     foreach($cart as $cartItem){
       $id = $cartItem['id'];
       $table = $cartItem['table_name'];
@@ -27,7 +28,8 @@
       $query = $conn->query($update);
     }
 
-    $insert = "INSERT INTO user_trans(user_id, transId, Date, Amount, transString) VALUES ($user_id, 1, '$date', $amount, '$cartString')";
+    // insert the data into the user_trans table
+    $insert = "INSERT INTO user_trans VALUES (null, $user_id, 1, '$date', $amount, '$cartString')";
 
     $query = $conn->query($insert);
 

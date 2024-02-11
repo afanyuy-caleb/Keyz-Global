@@ -3,7 +3,7 @@
   include_once('db_ops/database-select.php');
 
   $userId = $feedback['id'];
-  $sel_query = "SELECT * from user_trans WHERE user_id = '$userId' ORDER BY id DESC";
+  $sel_query = "SELECT * FROM user_trans WHERE user_id = $userId ORDER BY id DESC";
   $trans = $conn->query($sel_query);
   $trans = $trans->fetch_all(MYSQLI_ASSOC);
 
@@ -26,8 +26,10 @@
 
   // A function that calculates the total purchases.
   function getTotalPurchases($con, $tableString){ 
+    
     $table = $tableString[0]->table_name;
     $id = $tableString[0]->id;
+
     $query = "SELECT total_purchases FROM products.$table WHERE $table.id = '$id'";
     $result = $con->query($query);
 

@@ -8,7 +8,9 @@ notif_cls.addEventListener('click', ()=>{
 
 function Page_redirect_notification(page_index, destination_name){
 
-  let url_link = "http://localhost/official/Keyz-Global/Products/"+destination_name;
+  let url_link = document.URL.substring(0, document.URL.lastIndexOf('/')) + "/Products/" + destination_name;
+
+  console.log(url_link)
   
   if(page_index == 0)
     log_notif.classList.add('active')  

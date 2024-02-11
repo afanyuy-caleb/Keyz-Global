@@ -205,8 +205,11 @@ function renderPage(received_id){
 
     <hr>
     <div class="Pay-btn">
-      <a href="./Checkout.php" type="submit" class="submit-payment">Confirm & Pay
-      </a>
+      <div id="pay-msg">
+
+      </div>
+      <button type="submit" class="submit-payment">Confirm & Pay
+      </button>
 
     </div>
   `
@@ -218,16 +221,19 @@ function renderPage(received_id){
   const reduceQty = document.querySelectorAll('.reduceQty')
   const shipBtn = document.querySelector('.option-link');
   const shipIcon  = document.querySelector('.option-link i')
-  const payBtn = document.querySelector('.payment-link')
+  const paymentLinks = document.querySelector('.payment-link')
   const payIcon = document.querySelector('.payment-link i')
+  const subPaymentMsg = document.getElementById('pay-msg')
+  const subPaymentBtn = document.querySelector('.submit-payment')
 
-  const check = document.querySelectorAll('.ship-values');
+  const check = document.querySelectorAll('.ship-values')
 
   if(shippingPrice || shippingPrice == 0){
     document.querySelector('.shipping-options').classList.add('active');
     shipIcon.classList = 'fas fa-chevron-up'
   }
 
+  // Choosing the shipping options
   check.forEach((checkrad, index)=>{
     checkrad.addEventListener('click', ()=>{
       let ship_string = document.querySelectorAll('.ship-values')[index].dataset.shipping;
@@ -242,6 +248,25 @@ function renderPage(received_id){
     })
   })
 
+
+// Verify whether or not the cart is empty before the submitting the payment
+  subPaymentBtn.addEventListener('click', ()=>{
+    if(cart.length != 0){
+      let url = document.URL.substring(0, document.URL.lastIndexOf('/')) + "/Checkout.php";
+      window.open(url);
+      console.log(cart);
+    }
+    else{
+      subPaymentMsg.innerText = "There is nothing to pay for!!"
+      setTimeout(() =>{
+        subPaymentMsg.innerText = '';
+        
+      }, 3000)
+    }
+    
+  })
+
+  // Shipping options
   shipBtn.addEventListener('click', ()=>{
     document.querySelector('.payment-options').classList.remove('active')
     payIcon.classList = 'fas fa-chevron-down';
@@ -255,7 +280,8 @@ function renderPage(received_id){
     }
   })
 
-  payBtn.addEventListener('click', ()=>{
+  // Payment options
+  paymentLinks.addEventListener('click', ()=>{
     document.querySelector('.shipping-options').classList.remove('active');
     shipIcon.classList = 'fas fa-chevron-down'
     document.querySelector('.payment-options').classList.toggle('active')
@@ -267,6 +293,7 @@ function renderPage(received_id){
       payIcon.classList = 'fas fa-chevron-down';
     }
   })
+  // Delete a product from the cart
   delBtn.forEach((del, index)=>{
     del.addEventListener('click', ()=>{
       
@@ -275,6 +302,7 @@ function renderPage(received_id){
     })
   })
 
+  // Add product quantity in the cart
   addQty.forEach(btn =>{
     btn.addEventListener('click', ()=>{
       let update_id = btn.dataset.pdUpdate;
@@ -285,6 +313,7 @@ function renderPage(received_id){
     })
   })
 
+  // Reduce product quantity
   reduceQty.forEach(btn =>{
     btn.addEventListener('click', ()=>{
       let update_id = btn.dataset.pdUpdate;

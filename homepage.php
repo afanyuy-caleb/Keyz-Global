@@ -27,9 +27,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <link rel="icon" type="image/png" href="images/Myimage/K.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Official webpage</title>
+  <title>Keyz Global E-shopping</title>
 
   <link rel="stylesheet" href="styles/font.css">
   <link rel="stylesheet" href="styles/index.css">
@@ -70,7 +72,7 @@
 
       </h3>
       <div class="pro-image" id="user-dropdown" title="View profile">
-        <img src="images/profile-pics/<?php echo $pic; ?>" id="image">
+        <img src="images/profile-pics/<?php echo $pic??'default.jpg'; ?>" id="image">
         <i class='bx bx-chevron-down'></i>
       </div>
       

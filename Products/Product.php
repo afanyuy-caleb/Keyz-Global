@@ -11,11 +11,15 @@
 
   include_once('Product_assets/Data_search.php');
 
+  $title = strtoupper($title[0]).str_replace($title[0], "", $title);
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link rel="icon" type="image/png" href="../images/Myimage/K.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $title?></title>

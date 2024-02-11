@@ -183,9 +183,7 @@ main .details-section{
 .table table{
   width: 100%;
 }
-table tr{
-  border-bottom: 1px groove rgb(193, 190, 190);
-}
+
 table tr th, td{
   text-align: left;
   padding: 3px;
@@ -205,4 +203,6 @@ main .details-section .details{
   height: 100%;
   width: 100%;
   text-align: center;
+  opacity: 0;
+  transition: 0.3s;
 }

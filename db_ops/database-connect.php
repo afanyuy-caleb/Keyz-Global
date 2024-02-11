@@ -3,12 +3,12 @@
   $host="localhost";
   $user="Keyz_dev";
   $pass="cream";
-  $db_name="Registration"; 
+  $db_name="registration"; 
 
-  $conn = new mysqli($host, $user, $pass);
+  $conn = new mysqli($host, $user, $pass, $db_name);
 
   if(mysqli_connect_errno()){
     die("connection failed". mysqli_connect_error());
-  } 
+  }
 
 ?>

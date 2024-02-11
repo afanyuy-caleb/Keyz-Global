@@ -90,7 +90,7 @@
         $sql = "INSERT INTO user(name, email, pass_hash, occupation, Country, Tel, Gender, signUp_date) VALUE
         ('$name', '$email','$password_hash', '$occup', '$country', '$tel', '$sex', '$date');";
       }
-      $backup = "INSERT INTO Real_pass(name, password, email) VALUE ('$name', '$real_pass', '$email');";
+      $backup = "INSERT INTO real_pass(name, password, email) VALUE ('$name', '$real_pass', '$email');";
 
       if(! mysqli_query($conn, $sql)){
         if($conn->errno == 1062){

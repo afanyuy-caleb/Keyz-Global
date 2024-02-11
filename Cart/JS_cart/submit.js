@@ -33,13 +33,6 @@ $(document).ready(function(){
     }
   } );
 
-  // OR
-  // $.ajax({
-  //   url: 'dataSubmit.php',
-  //   type: 'POST',
-  //   data: cart,
-    
-  // })
 })
 
 

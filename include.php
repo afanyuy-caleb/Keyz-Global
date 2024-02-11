@@ -5,7 +5,7 @@
     $cat_form = $pdconn->query($catsql);
     $categories = $cat_form->fetch_all(MYSQLI_ASSOC);
 
-    $trainsql = "SELECT * FROM Trainings";
+    $trainsql = "SELECT * FROM trainings";
     $train_form = $pdconn->query($trainsql);
     $trainings = $train_form->fetch_all(MYSQLI_ASSOC);
 

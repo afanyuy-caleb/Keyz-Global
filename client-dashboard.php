@@ -7,11 +7,14 @@
   }
 
   include_once 'dashboard-data.php';
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link rel="icon" type="image/png" href="images/Myimage/K.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +25,8 @@
 
   <link rel="stylesheet" href="styles/client-dash.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -52,6 +57,10 @@
           <i class="fas fa-house"></i>  
           Home
         </a>
+        <a href="Cart/index.php">
+          <i class='fas fa-shopping-cart'></i>
+          <p>My cart</p>
+        </a>
         <a href="profile.php">
           <i class="fas fa-user"></i>  
           My Profile
@@ -61,6 +70,7 @@
           <i class='fas fa-comment'></i>
           <p>Messaging Forum</p>
         </a>
+        
 
         <form action="" method="POST">
           <i class=""></i>
@@ -108,14 +118,14 @@
             <?php
               $sn = 1;
               foreach($trans as $tran):
-                $type = getTrans($conn, $tran['transId']);        
+                $type = getTrans($conn, $tran['transId']);  
             ?>
             <tr>
               <td><?= $sn?></td>
               <td><?= $tran['Date']?></td>
               <td><?= $type?></td>
               <td>&dollar;<?= $tran['Amount']?></td>
-              <td><i class="fas fa-circle-info det"  title="More details"></i></td>
+              <td class="detail_link" onclick=transDetails(<?=$tran['id']?>) ><i class="fas fa-circle-info det"  title="More details"></i></td>
             </tr>
 
             <?php
@@ -133,6 +143,8 @@
       
     </section>
   </main>
-  
+
+  <script src="JS/client-dash.js"></script>
+
 </body>
 </html>

@@ -46,7 +46,7 @@ function Product_update(button, id, item_qty){
       exist_div.innerHTML = '<i class="fas fa-check"></i> Item already exists';
 
       setTimeout(()=>{
-        exist_div.innerText = '';
+        exist_div.innerText = ''
       }, 3000)
 
     }
