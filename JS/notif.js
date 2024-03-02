@@ -16,6 +16,6 @@ function Page_redirect_notification(page_index, destination_name){
     log_notif.classList.add('active')  
   
   else 
-    window.open(url_link, '_self')
-   
+    window.open(url_link, '_self') 
  }
+ 

@@ -293,6 +293,7 @@ function renderPage(received_id){
       payIcon.classList = 'fas fa-chevron-down';
     }
   })
+  
   // Delete a product from the cart
   delBtn.forEach((del, index)=>{
     del.addEventListener('click', ()=>{
