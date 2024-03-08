@@ -251,10 +251,11 @@ function renderPage(received_id){
 
 // Verify whether or not the cart is empty before the submitting the payment
   subPaymentBtn.addEventListener('click', ()=>{
+
     if(cart.length != 0){
       let url = document.URL.substring(0, document.URL.lastIndexOf('/')) + "/Checkout.php";
-      window.open(url);
-      console.log(cart);
+      window.open(url, "_self");
+    
     }
     else{
       subPaymentMsg.innerText = "There is nothing to pay for!!"
@@ -282,6 +283,7 @@ function renderPage(received_id){
 
   // Payment options
   paymentLinks.addEventListener('click', ()=>{
+
     document.querySelector('.shipping-options').classList.remove('active');
     shipIcon.classList = 'fas fa-chevron-down'
     document.querySelector('.payment-options').classList.toggle('active')

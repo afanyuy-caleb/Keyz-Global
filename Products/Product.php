@@ -38,7 +38,9 @@
 <body>
   <header>
     <div class="logo">
-      <i class="fas fa-globe"></i>
+      <i>
+        <img src="../images/Myimage/K-removebg.png" alt="">
+      </i> 
       <p>Keyz-<span>Global</span></p>
     </div>
     <div class="header-search">
@@ -232,7 +234,7 @@
           echo '
           <a href="#section'.$img_array[$a-1].'" title="page '.$a.'">'.$a.'</a>';
         }
-      } #End of the error message condition
+      } #End of the alternative error message condition
       ?>
 
     </div>
@@ -241,12 +243,7 @@
 
   <?php
 
-    if(empty($_SESSION['email-address'])){
-      // variable to control the link directions in the footer
-      $footer_control = '../';
-    }else{
-      $footer_control = '../homepage.php';
-    }
+    $footer_control = '../homepage.php';
       
     include_once('../footer.php');
   ?>

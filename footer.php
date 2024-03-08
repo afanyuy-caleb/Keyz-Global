@@ -4,7 +4,9 @@
   <div class="first-footer">
       <div class="footer-content">
         <div class="footer-header">
-          <i class='fas fa-globe'></i>
+          <i>
+            <img src="<?php echo !empty($footer_control) ?'../':NULL;?>images/Myimage/K-removebg.png" alt="">
+          </i> 
           <p class="title">Keyz-<span>Global</span></p>
         </div>
         <div class="footer-links">

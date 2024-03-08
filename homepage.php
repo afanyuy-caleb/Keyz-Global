@@ -47,7 +47,9 @@
 <body>
   <header>
     <div class="logo">
-      <i class="fas fa-globe"></i>
+      <i>
+        <img src="images/Myimage/K-removebg.png" alt="">
+      </i> 
       <p> Keyz-<span>Global</span> </p>
     </div>
     <i id="menu" class='fas fa-bars'></i>

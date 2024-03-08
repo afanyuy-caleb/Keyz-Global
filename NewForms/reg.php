@@ -1,4 +1,4 @@
-<?php
+ -S<?php
   session_start();
   include_once('../db_ops/database-connect.php');
 

@@ -45,12 +45,17 @@ section .curve{
 section .curve:hover{
   opacity: 0.8
 }
+.curve #arrow{
+  font-size: 40px;
+  font-weight: bold;
+  transform: translate(-5%, -40%);
+  line-height: 50%;
+
+}
 section .curve:hover span{
   transform: translateX(-2%)
 }
 section .curve span{
-  font-size: 1.7em;
-  font-weight: bold;
   transition: all 0.3s ease;
 }
 
@@ -75,7 +80,12 @@ section .header .logo{
   justify-content: center;
   margin-bottom: 2%;
 }
-section .header .logo i, section .header .logo span{
+
+section .header .logo i img{
+  height: 35px;
+  width: 35px;
+}
+section .header .logo span{
   font-size: 1.2em;
   color: rgb(62, 62, 230);
 }
@@ -83,7 +93,7 @@ section .header .logo p{
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif ;
   font-weight: bolder;
-  font-size: 1.3em;
+  font-size: 23px;
   padding-left: 3px;
 }
 

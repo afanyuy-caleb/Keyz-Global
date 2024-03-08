@@ -29,7 +29,11 @@ header .logo{
   align-items: center;
   justify-content: center;
 }
-header .logo i, header .logo span{
+header .logo i img{
+  height: 35px;
+  width: 35px;
+}
+header .logo span{
   font-size: 23px;
   color: rgb(62, 62, 230);
 }

@@ -45,8 +45,20 @@ main .user-info{
   padding: 3px;
   font-size: 1.3em;
 }
-
-
+.user-info .logo i{
+  position: relative;
+  height: 17px;
+  width: 17px;
+  background: aliceblue;
+  display: grid;
+  place-items: center;
+  margin-right: 2%;
+}
+.user-info .logo i img{
+  height: 35px;
+  width: 35px;
+  position: absolute;
+}
 .logo p{
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif ;
@@ -194,15 +206,108 @@ table tr td{
   height: 40px;
 }
 
+.click-link{
+  width: 100px;
+  font-size: 0.7em;
+  text-align: center;
+  margin-left: -38px;
+  margin-bottom: 20px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: linear-gradient(rgb(27, 177, 247), rgb(190, 47, 190));
+  border-radius: 50%;
+  padding: 4px;
+  animation: pop 0.8s infinite alternate-reverse;
+}
+
+.click-link::before{
+  content: '';
+  position: absolute;
+  top: 95%;
+  right: 40%;
+  height: 0px;
+  width: 2px;
+  border-left: 9px solid transparent;
+  border-top: 12px solid rgb(190, 47, 190);
+  border-right: 9px solid transparent;
+}
+
+@keyframes pop {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(8px);
+  }
+}
+
 td .det{
   font-size: 1.2em;
 }
 
+#clicked{
+  color: purple;
+  position: relative;
+}
+
 main .details-section .details{
-  background: white;
-  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  max-height: 100%;
   width: 100%;
   text-align: center;
-  opacity: 0;
+  display: none;
   transition: 0.3s;
+  z-index: 2;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.details::-webkit-scrollbar{
+  display: none;
+}
+
+/* The stagger */
+
+#stagger{
+  position: fixed;
+  z-index: 1;
+  transform: rotate(230deg);
+  right: -20%;
+  bottom: -45%;
+}
+
+/* The contents section */
+
+.contents .detailContents, .contents .contentHeader{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100px
+}
+
+.contents .contentHeader{
+  height: 50px;
+  place-items: center;
+}
+
+.contents .contentHeader h5{
+  white-space: nowrap;
+}
+
+.contents .detailContents{
+  margin-bottom: 10px
+}
+.contents .detailContents .img-section img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+
+.contents .detailContents div{
+  display: grid;
+  place-items: center;
+  
 }

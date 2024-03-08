@@ -17,11 +17,11 @@
 .footer-header{
   display: inline-flex;
   white-space: nowrap;
+  align-items: center;
 }
-.footer-header i{
-  height: 100%;
-  background: rgb(60, 60, 199);
-  color: #e7dddd;
+.footer-header i img{
+  height: 35px;
+  width: 35px;
   text-align: center;
   border: none;
   border-radius: 50%;

@@ -64,7 +64,9 @@
   <span id="exch"></span>
   <section class="section1">
     <header>
-      <i class='fas fa-globe'></i>
+      <i>
+        <img src="images/Myimage/K-removebg.png" alt="">
+      </i> 
       <p>Keyz-Global</p>
     </header>
 
@@ -211,7 +213,9 @@
       </div>
 
       <div class="animation-section">
-        <div></div>
+        <div class="chart">
+          <img src="images/Myimage/column-chart-examples.webp" alt="">
+        </div>
         <div class="container">
           <?php
             for ($i=0; $i<20; $i++):
@@ -283,6 +287,10 @@
     <source src="audio/lion.mp3" type="audio/mp3">
     <source src="audio/great-mercy.mp3" type="audio/mp3">
   </audio>
+
+  <!-- sideBar color changer -->
+
+  <div id="vertical"></div>
 
   <script src="JS/dashboard.js"></script>
 </body>

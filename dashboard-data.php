@@ -12,7 +12,7 @@
   // Extracting the table name and id of each products
   foreach($trans as $transact){
     if($transact['transId'] == 1){
-      $total_purchases += getTotalPurchases($conn, json_decode($transact['transString']));
+      $total_purchases += $transact['pd_quantity'];
     }
   }
 
@@ -24,15 +24,16 @@
     return $result->fetch_column();
   }
 
-  // A function that calculates the total purchases.
-  function getTotalPurchases($con, $tableString){ 
+  // // A function that calculates the total purchases.
+  // function getTotalPurchases($con, $tableString){ 
     
-    $table = $tableString[0]->table_name;
-    $id = $tableString[0]->id;
+  //   $table = $tableString[0]->table_name;
+  //   $id = $tableString[0]->id;
 
-    $query = "SELECT total_purchases FROM products.$table WHERE $table.id = '$id'";
-    $result = $con->query($query);
+  //   $query = "SELECT total_purchases FROM products.$table WHERE $table.id = '$id'";
+  //   $result = $con->query($query);
 
-    return $result->fetch_column();
-  }
+  //   return $result->fetch_column();
+  // }
+  
 ?>

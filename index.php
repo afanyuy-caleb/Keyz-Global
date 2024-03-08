@@ -31,7 +31,9 @@
 
   <header>
     <div class="logo">
-      <i class="fas fa-globe"></ion-icon></i> 
+      <i>
+        <img src="images/Myimage/K-removebg.png" alt="">
+      </i> 
       <p> Keyz-<span>Global</span> </p>
     </div>
     <i id="menu" class='fas fa-bars'></i>

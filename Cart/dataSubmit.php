@@ -7,6 +7,7 @@
 
     $user_id = $feedback['id'];
     $amount = $_REQUEST['amt'];
+    $pd_qty = $_REQUEST['totPdQty'];
     $cart = $_REQUEST['cart'];
     $cartString = $_REQUEST['cartString'];
     $date = $_REQUEST['date'];
@@ -29,7 +30,7 @@
     }
 
     // insert the data into the user_trans table
-    $insert = "INSERT INTO user_trans VALUES (null, $user_id, 1, '$date', $amount, '$cartString')";
+    $insert = "INSERT INTO user_trans VALUES (null, $user_id, 1, '$date', $amount, '$cartString', $pd_qty)";
 
     $query = $conn->query($insert);
 

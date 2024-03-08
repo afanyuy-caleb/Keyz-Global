@@ -76,5 +76,6 @@ export function updateItem(id, value){
       }
     }
   })
+  
   UpdateStorage();
 }

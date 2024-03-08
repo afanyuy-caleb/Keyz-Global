@@ -27,9 +27,11 @@ var quantity = document.querySelector('#pd_qnty_num')
 setCart(quantity);
 
 Add_btn.forEach((button, index) =>{
+
   button.addEventListener('click', ()=>{
+    
     var id = button.dataset.productid;
-    const item_qty = document.querySelector(`.item_${id}`).value;
+    const item_qty = document.querySelector(`.item_${id}`).value
     Product_update(button, id, item_qty);
 
   })

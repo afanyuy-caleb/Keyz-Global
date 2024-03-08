@@ -1,7 +1,8 @@
 <?php
   session_start();
   
-  if(!isset($_SESSION['values'])){
+  if(!isset($_SESSION['values']) || isset($_POST['logout'])){
+    session_destroy();
     header("Location: index.php");
     exit();
   }
@@ -34,7 +35,9 @@
   <main>
     <section class="user-info">
       <div class="logo">
-        <i class="fas fa-globe"></i>
+        <i>
+          <img src="images/Myimage/K-removebg.png" alt="">
+        </i> 
         <p>Keyz-<span>Global</span></p>
       </div>
 
@@ -74,7 +77,7 @@
 
         <form action="" method="POST">
           <i class=""></i>
-          <input type="submit" value="Sign Out" name="logout">
+            <input type="submit" value="Sign Out" name="logout">
         </form>
       </div>
     </section>
@@ -113,6 +116,7 @@
               <th>Date</th>
               <th>Type</th>
               <th>Amount</th>
+              <th class="click-link">Double click here</th>
             </tr>
 
             <?php
@@ -125,7 +129,8 @@
               <td><?= $tran['Date']?></td>
               <td><?= $type?></td>
               <td>&dollar;<?= $tran['Amount']?></td>
-              <td class="detail_link" onclick=transDetails(<?=$tran['id']?>) ><i class="fas fa-circle-info det"  title="More details"></i></td>
+              
+              <td class="detail_link" ><i class="fas fa-circle-info det" title="More details" data-identifier="<?=$tran['id']?>"></i></td>
             </tr>
 
             <?php
@@ -137,14 +142,22 @@
         </div>
 
         <div class="details">
-          Details
+          <div class="header">
+              <h3>Items involved <span id="item-nb"></span></h3> 
+          </div>
+          <div class="contents">
+            
+          </div>
         </div>
       </div>
       
     </section>
   </main>
+  <i id="stagger">
+    <img src="images/Myimage/K-removebg.png" alt="">
+  </i> 
 
-  <script src="JS/client-dash.js"></script>
+  <script type="module" src="JS/client-dash.js"></script>
 
 </body>
 </html>

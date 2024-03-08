@@ -30,12 +30,15 @@
 
   <section>
     <a href="../homepage.php" class="curve">
-      <span>&leftarrow;</span>&nbsp; Continue Shopping
+      <span id="arrow"> &leftarrow; </span>
+      <span>Continue Shopping</span>
     </a>
 
     <div class="header">
       <div class="logo">
-        <i class="fas fa-globe"></i>
+        <i>
+          <img src="../images/Myimage/K-removebg.png" alt="">
+        </i> 
         <p>Keyz-<span>Global</span></p>
       </div>
 

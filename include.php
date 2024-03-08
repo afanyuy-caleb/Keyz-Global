@@ -49,6 +49,7 @@
       </div>
 
     </section>
+
     <section class="below-header">
       <button onclick="Page_redirect_notification(<?php echo $page_identifier; ?>, 'Soul Lifting.php')">Soul Lifting</button>
       <button onclick="Page_redirect_notification(<?php echo $page_identifier; ?>, 'Electronics.php')" >Electronic Gadgets</button>
@@ -68,6 +69,7 @@
   <!-- Product section -->
 
   <section class="Products" id="Products">
+    
     <div class="Product-section">
       <?php
         foreach($categories as $cat): 
@@ -119,11 +121,14 @@
 
     </div>
   </section>
+  
   <!-- About section -->
   <section class="About" id="About">
+
+    <h1>About <span class="us">Me</span></h1>
     <div class="About-content">
       <div class="About-image">
-        <img src="images/Myimage/myimage.png" alt="">
+        <img src="images/Myimage/20230423_131054.jpg" alt="">
       </div>
       <div class="About-desc">
         <div class="desc-content">
@@ -206,11 +211,11 @@
     $footer_control = '';
     include_once('footer.php');
   ?>
-  <a href="#Home">
+
   <div class="scroll-up">
-    <i>&uarr;</i>
+    <i id="scroll-up-value">&uarr;</i>
   </div>
-  </a>
+
 
   <noscript>
     Sorry, javascript is needed to advance with the site <br>
