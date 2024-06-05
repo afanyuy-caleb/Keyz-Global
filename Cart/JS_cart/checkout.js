@@ -248,26 +248,6 @@ function renderPage(received_id){
     })
   })
 
-
-// Verify whether or not the cart is empty before the submitting the payment
-  subPaymentBtn.addEventListener('click', ()=>{
-
-    if(cart.length != 0){
-      let url = document.URL.substring(0, document.URL.lastIndexOf('/')) + "/Checkout.php";
-      window.open(url, "_self");
-    
-    }
-    else{
-      subPaymentMsg.innerText = "There is nothing to pay for!!"
-      setTimeout(() =>{
-        subPaymentMsg.innerText = '';
-        
-      }, 3000)
-    }
-    
-  })
-
-  // Shipping options
   shipBtn.addEventListener('click', ()=>{
     document.querySelector('.payment-options').classList.remove('active')
     payIcon.classList = 'fas fa-chevron-down';
@@ -281,9 +261,7 @@ function renderPage(received_id){
     }
   })
 
-  // Payment options
-  paymentLinks.addEventListener('click', ()=>{
-
+  payBtn.addEventListener('click', ()=>{
     document.querySelector('.shipping-options').classList.remove('active');
     shipIcon.classList = 'fas fa-chevron-down'
     document.querySelector('.payment-options').classList.toggle('active')
@@ -295,8 +273,6 @@ function renderPage(received_id){
       payIcon.classList = 'fas fa-chevron-down';
     }
   })
-  
-  // Delete a product from the cart
   delBtn.forEach((del, index)=>{
     del.addEventListener('click', ()=>{
       

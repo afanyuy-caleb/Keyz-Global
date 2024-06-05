@@ -29,8 +29,7 @@
       $query = $conn->query($update);
     }
 
-    // insert the data into the user_trans table
-    $insert = "INSERT INTO user_trans VALUES (null, $user_id, 1, '$date', $amount, '$cartString', $pd_qty)";
+    $insert = "INSERT INTO user_trans(user_id, transId, Date, Amount, transString) VALUES ($user_id, 1, '$date', $amount, '$cartString')";
 
     $query = $conn->query($insert);
 

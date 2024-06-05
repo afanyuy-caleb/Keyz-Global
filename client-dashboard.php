@@ -129,8 +129,7 @@
               <td><?= $tran['Date']?></td>
               <td><?= $type?></td>
               <td>&dollar;<?= $tran['Amount']?></td>
-              
-              <td class="detail_link" ><i class="fas fa-circle-info det" title="More details" data-identifier="<?=$tran['id']?>"></i></td>
+              <td><i class="fas fa-circle-info det"  title="More details" data-identifier="<?=$tran['id']?>"></i></td>
             </tr>
 
             <?php
@@ -153,11 +152,8 @@
       
     </section>
   </main>
-  <i id="stagger">
-    <img src="images/Myimage/K-removebg.png" alt="">
-  </i> 
 
-  <script type="module" src="JS/client-dash.js"></script>
-
+  <script src="JS/client-dash.js" type="module"></script>
+  
 </body>
 </html>

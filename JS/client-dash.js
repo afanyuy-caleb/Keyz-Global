@@ -1,3 +1,4 @@
+
 import {formatCurrency} from '../Cart/JS_cart/utils/money.js'
 
 $(document).ready(function(){
@@ -5,8 +6,7 @@ $(document).ready(function(){
     const products = JSON.parse(localStorage.products);
     const contents = []; // Define contents variable here
 
-    function transDetails(id){
-
+    async function transDetails(id){
         var transString = null;
         
         let bool = false;
@@ -14,9 +14,7 @@ $(document).ready(function(){
         // The ajax call shouldn't be done everytime the button is clicked. It should be done just once and the resulting transaction string stored in an array, contents[].
 
         if(contents.length > 0){
-
             contents.forEach(item =>{
-
                 if(item.id === id){
 
                     bool = true;
@@ -47,7 +45,7 @@ $(document).ready(function(){
         }
         
         // Call the fetchData function
-        fetchData(id);
+        await fetchData(id);
         
         $(".details").css("display", "block")
 
@@ -127,15 +125,15 @@ $(document).ready(function(){
         }
     }
 
-    $(".detail_link").click(function(event) {
-        event.preventDefault(); // Prevent the default action
-        console.log("clicked");
-        let elem = event.target;
+    $(".det").click(async function(event) {
+
+        let elem = event.target;    
         $(".det").removeAttr('id');
         $(elem).attr("id", "clicked");
-        var id = event.target.dataset.identifier;
-        transDetails(id);
+        var id = elem.dataset.identifier;
+        await transDetails(id);
     });
-    
-    
 })
+
+
+
