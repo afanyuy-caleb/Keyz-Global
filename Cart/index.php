@@ -30,7 +30,6 @@
 
   <section>
     <a href="../homepage.php" class="curve">
-      <span id="arrow"> &leftarrow; </span>
       <span>Continue Shopping</span>
     </a>
 

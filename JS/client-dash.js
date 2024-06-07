@@ -8,7 +8,6 @@ $(document).ready(function(){
 
     async function transDetails(id){
         var transString = null;
-        
         let bool = false;
 
         // The ajax call shouldn't be done everytime the button is clicked. It should be done just once and the resulting transaction string stored in an array, contents[].

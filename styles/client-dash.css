@@ -258,4 +258,44 @@ main .details-section .details{
   max-height: 100%;
   width: 100%;
   text-align: center;
+  display: none;
+  padding: 20px;
+}
+
+/* The contents section */
+.contents .detailContents, .contents .contentHeader{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100px;
+}
+
+.contents .contentHeader{
+  height: 50px;
+  place-items: center;
+}
+
+.contents .contentHeader h5{
+  white-space: nowrap;
+}
+
+.contents .detailContents{
+  margin-bottom: 10px;
+
+  div{
+    display: grid;
+    place-items: center;
+  }
+
+  .img-section{
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover; 
+    }
+  }
 }
